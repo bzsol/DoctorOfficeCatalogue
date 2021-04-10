@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "v/h8z23WMWUtXbHMlLoi5BvjbcDbdPA9Hnidrz34keR4uYhX0c2YEKpAAS1kufABuh8emrid0gWvYuwNQA5kjQ==",
+  "success": true,
+  "projectFilePath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\koszt\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\koszt\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
