@@ -28,10 +28,10 @@ namespace Assistant
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            FirstnameTextBox.Text = "";
-            HISTextBox.Text = "";
+            FirstNameTextBox.Text = "";
             SecondNameTextBox.Text = "";
             HomeAddressTextBox.Text = "";
+            HISTextBox.Text = "";
             ComplaintTextBox.Text = "";
 
         }

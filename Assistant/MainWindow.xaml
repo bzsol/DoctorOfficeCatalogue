@@ -76,52 +76,44 @@
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="0" Orientation="Horizontal">
                     <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="15" Padding="0" Margin="0" VerticalAlignment="Center" FontWeight="Bold">Vezetéknév:</TextBlock>
-                        <TextBox x:Name="SecondNameTextBox" materialDesign:HintAssist.HelperText="Kovács" Width="870" Height="29" Margin="10,0,0,0" Grid.Column="1" FontWeight="Bold" FontSize="15"></TextBox>
+                        <TextBox x:Name="SecondNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Vezetéknév"
+          Text="{Binding Content}" materialDesign:HintAssist.HelperText="Kovács" Width="930" Margin="10,28,0,19" FontSize="20"/>
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="1" Orientation="Horizontal">
                     <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="15" Padding="0" Margin="0" VerticalAlignment="Center" FontWeight="Bold">Keresztnév:</TextBlock>
-                        <TextBox x:Name="FirstnameTextBox" materialDesign:HintAssist.HelperText="János" Width="870" Height="29" Margin="10,0,0,0" Grid.Column="1" FontWeight="Bold" FontSize="15"></TextBox>
+                        <TextBox x:Name="FirstNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Keresztnév"
+          Text="{Binding Content}" materialDesign:HintAssist.HelperText="József" Width="930" Margin="10,28,0,19" FontSize="20"/>
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="2" Orientation="Horizontal">
                     <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="15" Padding="0" Margin="13" VerticalAlignment="Center" FontWeight="Bold">Lakcím:</TextBlock>
-                        <TextBox x:Name="HomeAddressTextBox" materialDesign:HintAssist.HelperText="Rákosfaszaalsó,Kossuth utca 42." Width="890" Height="29" Margin="10,0,0,0" Grid.Column="1" FontWeight="Bold" FontSize="15"></TextBox>
+                        <TextBox x:Name="HomeAddressTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Lakcím"
+          Text="{Binding Content}" materialDesign:HintAssist.HelperText="Mucsaröcsöge,Kossuth utca 1." Width="930" Margin="10,28,0,19" FontSize="20"/>
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="3" Orientation="Horizontal">
                     <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="15" Padding="0" Margin="24" VerticalAlignment="Center" FontWeight="Bold">TAJ:</TextBlock>
-                        <TextBox x:Name="HISTextBox" materialDesign:HintAssist.HelperText="000 000 000" Width="920" Height="29" Margin="10,0,0,0" Grid.Column="1" FontWeight="Bold" FontSize="15"></TextBox>
+                        <TextBox x:Name="HISTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="TAJ"
+          Text="{Binding Content}" materialDesign:HintAssist.HelperText="000 000 000" Width="930" Margin="10,28,0,19" FontSize="20"/>
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="4" Orientation="Horizontal">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="15" Padding="0" Margin="13" VerticalAlignment="Center" FontWeight="Bold">Panasz:</TextBlock>
-                        <TextBox x:Name="ComplaintTextBox" Width="900" Height="29" Margin="10" Grid.Column="1" FontWeight="Bold" FontSize="15" ></TextBox>
+                        <TextBox x:Name="ComplaintTextBox"
+    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+    VerticalAlignment="Top"
+    Width="920"
+    Height="79"
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    VerticalScrollBarVisibility="Auto"
+    materialDesign:HintAssist.Hint="Panasz"
+    FontSize="20"                          
+    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}" Margin="0,10,0,0" />
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">

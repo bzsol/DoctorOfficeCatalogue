@@ -28,5 +28,7 @@ namespace Common.Model
         public string HIS { get; set; }
 
         public string Complaint { get; set; }
+
+        public string Diagnose { get; set; }
     }
 }
