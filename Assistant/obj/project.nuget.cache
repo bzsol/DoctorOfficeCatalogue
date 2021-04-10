@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+OI/77AAoWR4va5bsJ11O+6HPS7pNACHCnubOfnaZQDuOc0vLNZ1aJors/G1SUfPw68UZNihmcDSsBDcTFfqmQ==",
+  "dgSpecHash": "RX06xtDP4C+qunvQABTtd+vyXrhke0yyTnLxSFg2XBXNPq02wn7gpFL2Zoh5/Jj/mckBnz0A9da/a6p+W4kIEA==",
   "success": true,
-  "projectFilePath": "D:\\Github\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
+  "projectFilePath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Zsolti\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
-    "C:\\Users\\Zsolti\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+    "C:\\Users\\koszt\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\koszt\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
   ],
   "logs": []
 }

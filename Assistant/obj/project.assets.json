@@ -91,19 +91,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zsolti\\.nuget\\packages\\": {}
+    "C:\\Users\\koszt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
+      "projectUniqueName": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
       "projectName": "Assistant",
-      "projectPath": "D:\\Github\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
-      "packagesPath": "C:\\Users\\Zsolti\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\DoctorOfficeCatalogue\\Assistant\\obj\\",
+      "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
+      "packagesPath": "C:\\Users\\koszt\\.nuget\\packages\\",
+      "outputPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Assistant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Zsolti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\koszt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -152,7 +152,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
