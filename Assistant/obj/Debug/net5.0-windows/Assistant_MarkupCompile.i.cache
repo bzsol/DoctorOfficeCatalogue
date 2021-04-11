@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Github\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\
 Assistant
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-D:\Github\DoctorOfficeCatalogue\Assistant\App.xaml
-11407045341
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\App.xaml
+21713480073
 
-6-776938029
-197-285118294
-MainWindow.xaml;
+7-1737210138
+197-2002262142
+MainWindow.xaml;Notification.xaml;
 
-True
+False
 

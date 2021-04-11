@@ -1,0 +1,23 @@
+﻿<Window x:Class="Assistant.Notification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assistant"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Megerősítés" Height="200" Width="750"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        BorderThickness="2"
+        BorderBrush="Coral">
+    <WindowChrome.WindowChrome>
+        <WindowChrome ResizeBorderThickness="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <Button Content="Nem" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 15 10" MinWidth="60" Click="Click_ConfirmationNo"/>
+        <Button Content="Igen" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 100 10" MinWidth="60" Click="Click_ConfirmationYes"/>
+        <TextBox HorizontalAlignment="Left" Text="Biztos vagy benne, hogy be szeretnéd zárni az alkalmazást?" TextWrapping="Wrap" VerticalAlignment="Top"
+                 Width="720" Height="60" BorderThickness="2" BorderBrush="Coral" Margin="15 30 0 0" FontSize="16" Padding="5 5 0 0"/>
+    </Grid>
+</Window>

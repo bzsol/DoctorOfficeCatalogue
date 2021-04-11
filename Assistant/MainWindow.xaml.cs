@@ -57,11 +57,9 @@ namespace Assistant
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            var result = MessageBox.Show("Would you like to close this application?", "Do you want to exit?", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result.Equals(MessageBoxResult.Yes))
-            {
-                Environment.Exit(0);
-            }
+            Notification notification = new Notification();
+            notification.Owner = (Window)PresentationSource.FromVisual(this).RootVisual;
+            notification.ShowDialog();
         }
 
         private void AddPatient_Click(object sender, RoutedEventArgs e)

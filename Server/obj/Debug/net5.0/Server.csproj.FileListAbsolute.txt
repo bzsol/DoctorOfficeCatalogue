@@ -51,3 +51,4 @@ D:\Github\DoctorOfficeCatalogue\Server\obj\Debug\net5.0\ref\Server.dll
 D:\Github\DoctorOfficeCatalogue\Server\obj\Debug\net5.0\Server.pdb
 D:\Github\DoctorOfficeCatalogue\Server\obj\Debug\net5.0\Server.genruntimeconfig.cache
 D:\Github\DoctorOfficeCatalogue\Server\bin\Debug\net5.0\patients.json
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Server\bin\Debug\net5.0\patients.json
