@@ -6,7 +6,7 @@ namespace Common.Model
 {
     public class Patient
     {
-        public long Id { get; set; }
+        public long ID { get; set; }
 
         public string FirstName { get; set; }
 
