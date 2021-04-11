@@ -9,7 +9,7 @@ namespace Common
     {
         public static bool IsValidName(string firstname, string secondname)
         {
-            Regex regex = new Regex(@"^[A-z]*$");
+            Regex regex = new Regex(@"^[A-Z-ÁÉÍÓÖŐÚÜŰ][a-z-áéíóöőúüű]+$");
             return regex.IsMatch(firstname) && regex.IsMatch(secondname);
         }
 
