@@ -122,5 +122,21 @@
                 </StackPanel>
             </Grid>
         </materialDesign:Card>
+        <materialDesign:Snackbar
+  x:Name="SnackbarOK"
+  IsActive="False" materialDesign:ThemeAssist.Theme="Dark">
+            <materialDesign:SnackbarMessage
+    Content="Az adatok felvétele sikeres!"
+    ActionContent="OK" ActionClick="Message_Click"
+                />
+        </materialDesign:Snackbar>
+        <materialDesign:Snackbar
+  x:Name="SnackbarPB"
+  IsActive="False" materialDesign:ThemeAssist.Theme="Dark">
+            <materialDesign:SnackbarMessage
+    Content="Az adatok megadása nem megfelelő!"
+    ActionContent="OK" ActionClick="Message_Click"
+                />
+        </materialDesign:Snackbar>
     </Grid>
 </Window>

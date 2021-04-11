@@ -35,6 +35,20 @@ namespace Assistant
             HISTextBox.Text = "";
             ComplaintTextBox.Text = "";
         }
+        private void TemporaryDisableTextFields() {
+            FirstNameTextBox.IsReadOnly = true;
+            SecondNameTextBox.IsReadOnly = true;
+            HomeAddressTextBox.IsReadOnly = true;
+            HISTextBox.IsReadOnly = true;
+            ComplaintTextBox.IsReadOnly = true;
+        }
+        private void OpenTextFields() {
+            FirstNameTextBox.IsReadOnly = false;
+            SecondNameTextBox.IsReadOnly = false;
+            HomeAddressTextBox.IsReadOnly = false;
+            HISTextBox.IsReadOnly = false;
+            ComplaintTextBox.IsReadOnly = false;
+        }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
@@ -64,7 +78,21 @@ namespace Assistant
                 patient.Diagnose = "";
                 PatientDataProvider.CreatePatient(patient);
                 ClearTextFields();
+                TemporaryDisableTextFields();
+                SnackbarOK.IsActive = true;
+
             }
+            else {
+                SnackbarPB.IsActive = true;
+                TemporaryDisableTextFields();
+            }
+        }
+
+        private void Message_Click(object sender, RoutedEventArgs e) {
+            SnackbarOK.IsActive = false;
+            SnackbarPB.IsActive = false;
+            OpenTextFields();
+
         }
     }
 }
