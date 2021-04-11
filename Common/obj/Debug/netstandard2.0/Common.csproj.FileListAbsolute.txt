@@ -7,3 +7,12 @@ D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.dll
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.pdb
+D:\Github\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.deps.json
+D:\Github\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.dll
+D:\Github\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.pdb
+D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.dll
+D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.pdb

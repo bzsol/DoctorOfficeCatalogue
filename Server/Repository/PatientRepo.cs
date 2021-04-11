@@ -15,7 +15,7 @@ namespace Server.Repository
         // Deserialize Patient and Get the objects in the file
 
         public static IEnumerable<Patient> GetPatients() {
-            if (File.Exists(datafile))
+            if (File.Exists(datafile) && new FileInfo(datafile).Length > 0)
             {
                 return JsonSerializer.Deserialize<IEnumerable<Patient>>(File.ReadAllText(datafile));
             }

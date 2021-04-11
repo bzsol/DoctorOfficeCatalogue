@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Assistant.DataProvider;
+using Common.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,14 +28,17 @@ namespace Assistant
             InitializeComponent();
         }
 
-        private void Clear_Click(object sender, RoutedEventArgs e)
-        {
+        private void ClearTextFields() {
             FirstNameTextBox.Text = "";
             SecondNameTextBox.Text = "";
             HomeAddressTextBox.Text = "";
             HISTextBox.Text = "";
             ComplaintTextBox.Text = "";
+        }
 
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            ClearTextFields();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -42,6 +47,23 @@ namespace Assistant
             if (result.Equals(MessageBoxResult.Yes))
             {
                 Environment.Exit(0);
+            }
+        }
+
+        private void AddPatient_Click(object sender, RoutedEventArgs e)
+        {
+            Patient patient = new Patient();
+            if (Common.Validation.IsValidName(FirstNameTextBox.Text, SecondNameTextBox.Text) && (Common.Validation.IsValidHIS(HISTextBox.Text)))
+            {
+                patient.FirstName = FirstNameTextBox.Text;
+                patient.LastName = SecondNameTextBox.Text;
+                patient.HIS = HISTextBox.Text;
+                patient.HomeAddress = HomeAddressTextBox.Text;
+                patient.Complaint = ComplaintTextBox.Text;
+                patient.Intake = DateTime.Now;
+                patient.Diagnose = "";
+                PatientDataProvider.CreatePatient(patient);
+                ClearTextFields();
             }
         }
     }

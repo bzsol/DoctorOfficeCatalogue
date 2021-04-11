@@ -79,3 +79,6 @@ D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-win
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Common.dll
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Common.pdb
+D:\Github\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\Github\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Common.dll
+D:\Github\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Common.pdb

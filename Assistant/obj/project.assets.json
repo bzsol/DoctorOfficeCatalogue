@@ -144,19 +144,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\koszt\\.nuget\\packages\\": {}
+    "C:\\Users\\Zsolti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
+      "projectUniqueName": "D:\\Github\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
       "projectName": "Assistant",
-      "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
-      "packagesPath": "C:\\Users\\koszt\\.nuget\\packages\\",
-      "outputPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Assistant\\obj\\",
+      "projectPath": "D:\\Github\\DoctorOfficeCatalogue\\Assistant\\Assistant.csproj",
+      "packagesPath": "C:\\Users\\Zsolti\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\DoctorOfficeCatalogue\\Assistant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\koszt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Zsolti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -170,8 +170,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
-              "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj"
+            "D:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
+              "projectPath": "D:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj"
             }
           }
         }
@@ -213,7 +213,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

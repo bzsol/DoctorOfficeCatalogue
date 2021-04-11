@@ -113,11 +113,11 @@
     VerticalScrollBarVisibility="Auto"
     materialDesign:HintAssist.Hint="Panasz"
     FontSize="20"                          
-    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}" Margin="0,10,0,0" />
+     Margin="0,10,0,0" />
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button Grid.Row="3" Width="147" Margin="20" Content="Felvétel"></Button>
+                    <Button Grid.Row="3" Width="147" Margin="20" Content="Felvétel" Click="AddPatient_Click"></Button>
                     <Button Grid.Row="3" Width="147" Margin="20" Content="Törlés" Click="Clear_Click"></Button>
                 </StackPanel>
             </Grid>
