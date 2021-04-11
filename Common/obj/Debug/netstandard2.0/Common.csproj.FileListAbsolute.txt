@@ -1,0 +1,9 @@
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.deps.json
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.dll
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.pdb
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.dll
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.pdb
