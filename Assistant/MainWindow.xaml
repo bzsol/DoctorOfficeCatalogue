@@ -26,7 +26,7 @@
                               Grid.Row="0">
             <DockPanel>
                 <TextBlock Style="{StaticResource MaterialDesignHeadline6TextBlock}"
-                   Text="Physician Assistant Panel"
+                   Text="Orvosi Asszisztens Panel"
                    Foreground="White" />
                 <materialDesign:PackIcon Kind="MedicalBag"
                                  Height="23"

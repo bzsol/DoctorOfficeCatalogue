@@ -84,3 +84,5 @@ D:\Github\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Common.dll
 D:\Github\DoctorOfficeCatalogue\Assistant\bin\Debug\net5.0-windows\Common.pdb
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.g.cs
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.baml
+D:\Github\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.g.cs
+D:\Github\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.baml

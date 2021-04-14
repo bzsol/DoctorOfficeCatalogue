@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{F7DEBD4D-2E38-4890-8A5C-D71072D0DF05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationTest", "ValidationTest\ValidationTest.csproj", "{28B3322B-9A89-4589-8E0A-EA17712B80BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationTest", "ValidationTest\ValidationTest.csproj", "{28B3322B-9A89-4589-8E0A-EA17712B80BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Physician", "Physician\Physician.csproj", "{15A2E041-80DE-44F3-9D79-D37B4D89D091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{28B3322B-9A89-4589-8E0A-EA17712B80BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28B3322B-9A89-4589-8E0A-EA17712B80BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28B3322B-9A89-4589-8E0A-EA17712B80BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A2E041-80DE-44F3-9D79-D37B4D89D091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A2E041-80DE-44F3-9D79-D37B4D89D091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A2E041-80DE-44F3-9D79-D37B4D89D091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A2E041-80DE-44F3-9D79-D37B4D89D091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

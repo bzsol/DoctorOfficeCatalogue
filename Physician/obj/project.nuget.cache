@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vxECpcDmhRsKBeYwjWdwaQ36XuwTHCGFvWKqGlofTRo6ra93rTtdJXGrfDDCZX9QqqfnXumcxwVkJRaEw8QcSw==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\DoctorOfficeCatalogue\\Physician\\Physician.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zsolti\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\Zsolti\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

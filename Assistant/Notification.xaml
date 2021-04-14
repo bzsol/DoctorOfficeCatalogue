@@ -18,6 +18,6 @@
         <Button Content="Nem" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 15 10" MinWidth="60" Click="Click_ConfirmationNo"/>
         <Button Content="Igen" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 100 10" MinWidth="60" Click="Click_ConfirmationYes"/>
         <TextBox HorizontalAlignment="Left" Text="Biztos vagy benne, hogy be szeretnéd zárni az alkalmazást?" TextWrapping="Wrap" VerticalAlignment="Top"
-                 Width="720" Height="60" BorderThickness="2" BorderBrush="Coral" Margin="15 30 0 0" FontSize="16" Padding="5 5 0 0"/>
+                 Width="720" Height="60" BorderThickness="2" BorderBrush="Coral" Margin="15 30 0 0" FontSize="16" Padding="5 5 0 0" IsReadOnly="True"/>
     </Grid>
 </Window>
