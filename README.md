@@ -27,8 +27,8 @@
 
 ---
 #### 2. Team members:
-@bzsol - GN6W3I <br>
-@KBE9  - XSGRHA
+[@bzsol](https://github.com/bzsol)<br>
+[@KBE9](https://github.com/KBE9)
 
 ---
 #### 3. Mentions:
@@ -40,5 +40,5 @@
 
 ---
 #### 4. Pictures:
-<center><img src="kep.png" alt="Assistant Panel Picture"></center>
+<center><img src="https://github.com/bzsol/DoctorOfficeCatalogue/blob/main/asspanel.png" alt="Assistant Panel Picture"></center>
 
