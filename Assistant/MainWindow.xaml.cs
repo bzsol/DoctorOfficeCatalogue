@@ -57,8 +57,10 @@ namespace Assistant
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            Notification notification = new Notification();
-            notification.Owner = (Window)PresentationSource.FromVisual(this).RootVisual;
+            Notification notification = new Notification
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
             notification.ShowDialog();
         }
 

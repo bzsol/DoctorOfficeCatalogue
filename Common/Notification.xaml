@@ -10,25 +10,14 @@
         WindowStartupLocation="CenterOwner"
         WindowStyle="None"
         BorderThickness="2"
-        BorderBrush="#FFA80000">
+        BorderBrush="Coral">
     <WindowChrome.WindowChrome>
         <WindowChrome ResizeBorderThickness="0" CaptionHeight="0"/>
     </WindowChrome.WindowChrome>
     <Grid>
-        <materialDesign:ColorZone Width="750" Height="25" Background="#FFA80000" VerticalAlignment="Top" HorizontalAlignment="Left" 
-                                  Foreground="White" FontSize="16">
-            <Grid Width="750">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.035*"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <materialDesign:PackIcon Kind="AlertOctagonOutline" Grid.Column="0" Height="25" Width="25" Margin="-2,-2,0,0" VerticalAlignment="Center"/>
-                <TextBlock Grid.Column="1" FontSize="16" FontWeight="DemiBold">Megerősítés</TextBlock>
-            </Grid>
-        </materialDesign:ColorZone>
         <Button Content="Nem" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 15 10" MinWidth="60" Click="Click_ConfirmationNo"/>
         <Button Content="Igen" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 100 10" MinWidth="60" Click="Click_ConfirmationYes"/>
         <TextBox HorizontalAlignment="Left" Text="Biztos vagy benne, hogy be szeretnéd zárni az alkalmazást?" TextWrapping="Wrap" VerticalAlignment="Top"
-                 Width="720" Height="60" BorderThickness="2" BorderBrush="#FFA80000" Margin="15 50 0 0" FontSize="16" Padding="5 5 0 0" IsReadOnly="True" IsHitTestVisible="False"/>
+                 Width="720" Height="60" BorderThickness="2" BorderBrush="Coral" Margin="15 30 0 0" FontSize="16" Padding="5 5 0 0" IsReadOnly="True"/>
     </Grid>
 </Window>

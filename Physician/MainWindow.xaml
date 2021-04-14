@@ -49,7 +49,7 @@
                         </ListBoxItem>
                         <ListBoxItem >
                             <DockPanel>
-                                <Button x:Name="ExitButton">
+                                <Button x:Name="ExitButton" Click="ExitButton_Click">
 
                                     <StackPanel Orientation="Horizontal">
                                         <materialDesign:PackIcon Kind="ExitRun"

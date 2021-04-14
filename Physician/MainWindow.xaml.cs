@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assistant;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,15 @@ namespace Physician
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Notification notification = new Notification
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            notification.ShowDialog();
         }
     }
 }
