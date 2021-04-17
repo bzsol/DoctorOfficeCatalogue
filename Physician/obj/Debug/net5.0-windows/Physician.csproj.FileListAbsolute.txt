@@ -58,3 +58,14 @@ D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-win
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Common.pdb
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\SelectedPatient.g.cs
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\SelectedPatient.baml
+D:\Github\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\SelectedPatient.g.cs
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Assistant.deps.json
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Assistant.runtimeconfig.json
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Assistant.runtimeconfig.dev.json
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Assistant.exe
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Assistant.dll
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Common.dll
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Assistant.pdb
+D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Common.pdb
+D:\Github\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\SelectedPatient.baml
