@@ -1,4 +1,5 @@
 ﻿using Assistant;
+using Common.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,8 @@ namespace Physician
         public MainWindow()
         {
             InitializeComponent();
+
+            PatientList.Items.Add(new Patient { FirstName = "Teszt", LastName = "Elek" });
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -33,6 +36,15 @@ namespace Physician
                 Owner = (Window)PresentationSource.FromVisual(this).RootVisual
             };
             notification.ShowDialog();
+        }
+
+        private void List_Selection(object sender, SelectionChangedEventArgs e)
+        {
+            SelectedPatient selected = new SelectedPatient()
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            selected.ShowDialog();
         }
     }
 }
