@@ -27,10 +27,7 @@ namespace Physician
         
         public void UpdateData()
         {
-            if (PatientDataProvider.GetPatients().ToList().Count > 0)
-            {
                 PatientList.ItemsSource = PatientDataProvider.GetPatients().ToList();
-            }
         }
 
         public MainWindow()
@@ -54,12 +51,15 @@ namespace Physician
         {
 
 
-            SelectedPatient selected = new SelectedPatient()
-            {
-                
-                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
-            };
-            selected.ShowDialog();
+            var Patient = PatientList.SelectedItem as Patient;
+            if (Patient != null) {
+                var window = new SelectedPatient(Patient);
+                window.ShowDialog();
+                PatientList.UnselectAll();
+                PatientList.ItemsSource = null;
+                UpdateData();
+
+            }
         }
     }
 }

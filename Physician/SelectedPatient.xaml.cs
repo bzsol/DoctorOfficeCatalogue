@@ -21,34 +21,37 @@ namespace Physician
     /// </summary>
     public partial class SelectedPatient : Window
     {
-        public Patient ChoosenOne = ((MainWindow)Application.Current.MainWindow).PatientList.SelectedItem as Patient;
+        private Patient patient;
 
-        public SelectedPatient()
+        public SelectedPatient(Patient ChoosenOne)
         {
             InitializeComponent();
-            if (ChoosenOne != null)
-            {
-                var name = ChoosenOne.FullName.Split(" ");
-                FirstNameTextBox.Text = name[0];
-                SecondNameTextBox.Text = name[1];
-                HISTextBox.Text = ChoosenOne.HIS;
-                HomeAddressTextBox.Text = ChoosenOne.HomeAddress;
-                ComplaintTextBox.Text = ChoosenOne.Complaint;
-            }
+            patient = ChoosenOne;
+            HISTextBox.Text = patient.HIS;
+            ComplaintTextBox.Text = patient.Complaint;
+            FirstNameTextBox.Text = patient.FirstName;
+            SecondNameTextBox.Text = patient.LastName;
+            HomeAddressTextBox.Text = patient.HomeAddress;
+            
         }
 
         private void DeletePatient_Click(object sender, RoutedEventArgs e)
         {
-            PatientDataProvider.DeletePatient(ChoosenOne.ID);
+            PatientDataProvider.DeletePatient(patient.ID);
         }
 
         private void SavePatientData_Click(object sender, RoutedEventArgs e)
         {
-
+            patient.Diagnose = DiagnosisTextBox.Text;
+            patient.HomeAddress = HomeAddressTextBox.Text;
+            patient.HIS = HISTextBox.Text;
+            patient.FirstName = FirstNameTextBox.Text;
+            patient.LastName = SecondNameTextBox.Text;
+            PatientDataProvider.UpdatePatient(patient);
         }
 
         private void ClosePatientDataWindow_Click(object sender, RoutedEventArgs e)
-        {
+        { 
             Close();
         }
     }

@@ -7,10 +7,11 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Patient Data" Height="600" Width="800"
-        WindowStartupLocation="CenterOwner"
+        WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         BorderBrush="#FFA80000"
-        BorderThickness="2">
+        BorderThickness="2"
+        >
     <WindowChrome.WindowChrome>
         <WindowChrome ResizeBorderThickness="0" CaptionHeight="0"/>
     </WindowChrome.WindowChrome>
@@ -55,13 +56,13 @@
             <Label Grid.Row="5" Grid.Column="0" Content="Diagnózis:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
 
             <TextBox Grid.Row="0" Grid.Column="1" x:Name="SecondNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                Text="{Binding Content}" Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="FirstNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                Text="{Binding Content}" Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20"/>
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="HomeAddressTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                Text="{Binding Content}"  Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" />
             <TextBox Grid.Row="3" Grid.Column="1" x:Name="HISTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                Text="{Binding Content}" Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20"/>
             <TextBox x:Name="ComplaintTextBox" Grid.Row="4" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
                 Height="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" FontSize="20" IsHitTestVisible="False"/>
             <TextBox x:Name="DiagnosisTextBox" Grid.Row="5" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"

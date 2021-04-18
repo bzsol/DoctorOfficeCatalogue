@@ -12,6 +12,7 @@
      TextElement.FontSize="13"
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
+     WindowStartupLocation="CenterScreen"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
@@ -74,7 +75,7 @@
                     <GridView>
                         <GridView.ColumnHeaderContainerStyle>
                             <Style BasedOn="{StaticResource {x:Type GridViewColumnHeader}}" TargetType="{x:Type GridViewColumnHeader}">
-                                <Setter Property="IsHitTestVisible" Value="False"/>
+                                <Setter Property="IsHitTestVisible" Value="True"/>
                             </Style>
                         </GridView.ColumnHeaderContainerStyle>
                         <GridViewColumn DisplayMemberBinding="{Binding FullName}"
