@@ -22,7 +22,7 @@ namespace Common.Model
 
         public string HomeAddress { get; set; }
 
-        public DateTime Intake { get; set; }
+        public string Intake { get; set; }
 
         // Health Insurance Card -> TAJ
         public string HIS { get; set; }

@@ -46,7 +46,8 @@ namespace Server.Controllers
                 ChoosenOne.HomeAddress = patient.HomeAddress;
                 ChoosenOne.HIS = patient.HIS;
                 ChoosenOne.Intake = patient.Intake;
-
+                ChoosenOne.Complaint = patient.Complaint;
+                ChoosenOne.Diagnose = patient.Diagnose;
                 PatientRepo.SavePatients(patients);
                 return Ok();
             }

@@ -2,9 +2,11 @@
 using Common.Model;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,6 +28,7 @@ namespace Assistant
         public MainWindow()
         {
             InitializeComponent();
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
         }
 
         private void ClearTextFields() {
@@ -74,7 +77,7 @@ namespace Assistant
                 patient.HIS = HISTextBox.Text;
                 patient.HomeAddress = HomeAddressTextBox.Text;
                 patient.Complaint = ComplaintTextBox.Text;
-                patient.Intake = DateTime.Now;
+                patient.Intake = DateTime.Now.ToString("yyyy.MM.dd HH:mm");
                 patient.Diagnose = "";
                 PatientDataProvider.CreatePatient(patient);
                 ClearTextFields();

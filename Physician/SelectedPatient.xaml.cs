@@ -38,6 +38,7 @@ namespace Physician
         private void DeletePatient_Click(object sender, RoutedEventArgs e)
         {
             PatientDataProvider.DeletePatient(patient.ID);
+            Close();
         }
 
         private void SavePatientData_Click(object sender, RoutedEventArgs e)
@@ -48,6 +49,7 @@ namespace Physician
             patient.FirstName = FirstNameTextBox.Text;
             patient.LastName = SecondNameTextBox.Text;
             PatientDataProvider.UpdatePatient(patient);
+            Close();
         }
 
         private void ClosePatientDataWindow_Click(object sender, RoutedEventArgs e)

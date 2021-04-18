@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationTest", "ValidationTest\ValidationTest.csproj", "{28B3322B-9A89-4589-8E0A-EA17712B80BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Physician", "Physician\Physician.csproj", "{15A2E041-80DE-44F3-9D79-D37B4D89D091}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Physician", "Physician\Physician.csproj", "{15A2E041-80DE-44F3-9D79-D37B4D89D091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

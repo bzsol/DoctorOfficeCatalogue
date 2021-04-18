@@ -3,6 +3,7 @@ using Common.Model;
 using Physician.DataProvider;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -33,7 +34,7 @@ namespace Physician
         public MainWindow()
         {
             InitializeComponent();
-
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
             //PatientList.Items.Add(new Patient { FirstName = "Teszt", LastName = "Elek" });
             //var timer = new System.Threading.Timer(e => UpdateData(), null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
             UpdateData();
@@ -58,7 +59,6 @@ namespace Physician
                 PatientList.UnselectAll();
                 PatientList.ItemsSource = null;
                 UpdateData();
-
             }
         }
     }
