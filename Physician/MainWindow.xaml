@@ -44,7 +44,7 @@
                                         <materialDesign:PackIcon Kind="Information"
                                          Height="25"
                                          Width="25" />
-                                        <Label Content="About"/>
+                                        <Label Content="Leírás"/>
                                     </StackPanel>
                                 </Button>
                             </DockPanel>
@@ -57,7 +57,7 @@
                                         <materialDesign:PackIcon Kind="ExitRun"
                                          Height="25"
                                          Width="25" />
-                                        <Label Content="Exit"/>
+                                        <Label Content="Kilépés"/>
                                     </StackPanel>
                                 </Button>
                             </DockPanel>
@@ -86,7 +86,7 @@
                         <GridViewColumn DisplayMemberBinding="{Binding HIS}"
                             Header="TAJ szám" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Intake}"
-                            Header="Látogatás" Width="Auto" />
+                            Header="Látogatás" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Complaint}"
                             Header="Panasz" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Diagnose}"
