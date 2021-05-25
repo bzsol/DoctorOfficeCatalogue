@@ -17,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Physician
 {
@@ -35,9 +36,7 @@ namespace Physician
         {
             InitializeComponent();
             Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
-            //PatientList.Items.Add(new Patient { FirstName = "Teszt", LastName = "Elek" });
-            //var timer = new System.Threading.Timer(e => UpdateData(), null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
-            UpdateData();
+            
         }
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
@@ -58,8 +57,20 @@ namespace Physician
                 window.ShowDialog();
                 PatientList.UnselectAll();
                 PatientList.ItemsSource = null;
-                UpdateData();
+                
             }
+        }
+
+        private void List_Load(object sender,RoutedEventArgs e) {
+            DispatcherTimer dt = new DispatcherTimer();
+            dt.Interval = TimeSpan.FromSeconds(1);
+            dt.Tick += Dt_Tick;
+            dt.Start();
+
+        }
+        private void Dt_Tick(object sender, EventArgs e)
+        {
+            UpdateData();
         }
     }
 }
