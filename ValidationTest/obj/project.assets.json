@@ -5733,19 +5733,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zsolti\\.nuget\\packages\\": {}
+    "C:\\Users\\koszt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\DoctorOfficeCatalogue\\ValidationTest\\ValidationTest.csproj",
+      "projectUniqueName": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\ValidationTest\\ValidationTest.csproj",
       "projectName": "ValidationTest",
-      "projectPath": "D:\\Github\\DoctorOfficeCatalogue\\ValidationTest\\ValidationTest.csproj",
-      "packagesPath": "C:\\Users\\Zsolti\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\DoctorOfficeCatalogue\\ValidationTest\\obj\\",
+      "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\ValidationTest\\ValidationTest.csproj",
+      "packagesPath": "C:\\Users\\koszt\\.nuget\\packages\\",
+      "outputPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\ValidationTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Zsolti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\koszt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5759,8 +5759,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
-              "projectPath": "D:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj"
+            "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
+              "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj"
             }
           }
         }
@@ -5807,7 +5807,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
