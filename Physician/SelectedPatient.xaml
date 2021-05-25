@@ -56,13 +56,13 @@
             <Label Grid.Row="5" Grid.Column="0" Content="Diagnózis:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
 
             <TextBox Grid.Row="0" Grid.Column="1" x:Name="SecondNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Kovács"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="FirstNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="József"/>
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="HomeAddressTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20" />
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Debrecen, Kossuth utca 1."/>
             <TextBox Grid.Row="3" Grid.Column="1" x:Name="HISTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="000 000 000"/>
             <TextBox x:Name="ComplaintTextBox" Grid.Row="4" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
                 Height="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" FontSize="20" IsHitTestVisible="False"/>
             <TextBox x:Name="DiagnosisTextBox" Grid.Row="5" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
@@ -70,9 +70,13 @@
         </Grid>
 
         <StackPanel Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Label x:Name="ErrorLabel" Content="Az adatok kitöltése hibás!" FontSize="20" FontWeight="SemiBold" Foreground="#FFA80000"
+               HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0 210 0" Visibility="Collapsed"/>
             <Button x:Name="DeletePatient" Content="Törlés" Margin="15" Width="80" Click="DeletePatient_Click"></Button>
             <Button x:Name="SavePatientData" Content="Mentés" Margin="15" Width="80" Click="SavePatientData_Click"></Button>
             <Button x:Name="ClosePatientDataWindow" Content="Kilépés" Margin="15" Width="80" Click="ClosePatientDataWindow_Click"></Button>
         </StackPanel>
+        <Label Content="Az adatok kitöltése hibás!" FontSize="20" FontWeight="SemiBold" Foreground="#FFA80000"
+               HorizontalAlignment="Left"/>
     </Grid>
 </Window>

@@ -91,7 +91,7 @@
                 <StackPanel Grid.Row="2" Orientation="Horizontal">
                     <Grid>
                         <TextBox x:Name="HomeAddressTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Lakcím"
-          Text="{Binding Content}" materialDesign:HintAssist.HelperText="Mucsaröcsöge,Kossuth utca 1." Width="930" Margin="10,28,0,19" FontSize="20"/>
+          Text="{Binding Content}" materialDesign:HintAssist.HelperText="Debrecen, Kossuth utca 1." Width="930" Margin="10,28,0,19" FontSize="20"/>
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="3" Orientation="Horizontal">

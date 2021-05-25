@@ -27,6 +27,7 @@ namespace Physician
         {
             InitializeComponent();
             patient = ChoosenOne;
+            PatientNameTextBlock.Text = $"{patient.FirstName} {patient.LastName} adatai";
             HISTextBox.Text = patient.HIS;
             ComplaintTextBox.Text = patient.Complaint;
             FirstNameTextBox.Text = patient.FirstName;
@@ -43,13 +44,18 @@ namespace Physician
 
         private void SavePatientData_Click(object sender, RoutedEventArgs e)
         {
-            patient.Diagnose = DiagnosisTextBox.Text;
-            patient.HomeAddress = HomeAddressTextBox.Text;
-            patient.HIS = HISTextBox.Text;
-            patient.FirstName = FirstNameTextBox.Text;
-            patient.LastName = SecondNameTextBox.Text;
-            PatientDataProvider.UpdatePatient(patient);
-            Close();
+            if (Common.Validation.IsValidHIS(HISTextBox.Text) && Common.Validation.IsValidName(FirstNameTextBox.Text, SecondNameTextBox.Text))
+            {
+                patient.Diagnose = DiagnosisTextBox.Text;
+                patient.HomeAddress = HomeAddressTextBox.Text;
+                patient.HIS = HISTextBox.Text;
+                patient.FirstName = FirstNameTextBox.Text;
+                patient.LastName = SecondNameTextBox.Text;
+                PatientDataProvider.UpdatePatient(patient);
+                Close();
+            }
+
+            ErrorLabel.Visibility = Visibility.Visible;
         }
 
         private void ClosePatientDataWindow_Click(object sender, RoutedEventArgs e)
