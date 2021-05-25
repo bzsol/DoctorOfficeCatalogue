@@ -69,3 +69,5 @@ D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Common.dll
 D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Assistant.pdb
 D:\Github\DoctorOfficeCatalogue\Physician\bin\Debug\net5.0-windows\Common.pdb
 D:\Github\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\SelectedPatient.baml
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\PhysicianHelper.g.cs
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\PhysicianHelper.baml

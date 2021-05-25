@@ -38,6 +38,16 @@ namespace Physician
             Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
             
         }
+
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            PhysicianHelper physicianHelper = new PhysicianHelper
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            physicianHelper.ShowDialog();
+        }
+
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Notification notification = new Notification

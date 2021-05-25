@@ -58,6 +58,15 @@ namespace Assistant
             ClearTextFields();
         }
 
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            AssistantHelper assistantHelper = new AssistantHelper
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            assistantHelper.ShowDialog();
+        }
+
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Notification notification = new Notification

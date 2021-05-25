@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\App.xaml
-2764980639
+3556963695
 
-5611199781
+6-668538266
 198-580649832
-MainWindow.xaml;SelectedPatient.xaml;
+MainWindow.xaml;PhysicianHelper.xaml;SelectedPatient.xaml;
 
 False
 

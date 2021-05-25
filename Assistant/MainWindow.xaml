@@ -39,7 +39,7 @@
                     <ListBox Style="{StaticResource MaterialDesignListBox}">
                         <ListBoxItem>
                             <DockPanel>
-                                <Button>
+                                <Button x:Name="HelpButton" Click="HelpButton_Click">
                                     <StackPanel Orientation="Horizontal">
                                         <materialDesign:PackIcon Kind="Information"
                                          Height="25"
@@ -119,8 +119,8 @@
                     </Grid>
                 </StackPanel>
                 <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button Grid.Row="3" Width="147" Margin="20" Content="Felvétel" Click="AddPatient_Click"></Button>
-                    <Button Grid.Row="3" Width="147" Margin="20" Content="Törlés" Click="Clear_Click"></Button>
+                    <Button Grid.Row="3" Width="150" Margin="20" Content="Felvétel" Click="AddPatient_Click"></Button>
+                    <Button Grid.Row="3" Width="150" Margin="20" Content="Törlés" Click="Clear_Click"></Button>
                 </StackPanel>
             </Grid>
         </materialDesign:Card>

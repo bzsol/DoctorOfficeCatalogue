@@ -39,7 +39,7 @@
                     <ListBox Style="{StaticResource MaterialDesignListBox}">
                         <ListBoxItem>
                             <DockPanel>
-                                <Button>
+                                <Button x:Name="HelpButton" Click="HelpButton_Click">
                                     <StackPanel Orientation="Horizontal">
                                         <materialDesign:PackIcon Kind="Information"
                                          Height="25"

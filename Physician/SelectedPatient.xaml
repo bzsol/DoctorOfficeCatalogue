@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Physician"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Patient Data" Height="600" Width="800"
+        Title="Beteg adatai" Height="600" Width="800"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         BorderBrush="#FFA80000"
@@ -76,7 +76,5 @@
             <Button x:Name="SavePatientData" Content="Mentés" Margin="15" Width="80" Click="SavePatientData_Click"></Button>
             <Button x:Name="ClosePatientDataWindow" Content="Kilépés" Margin="15" Width="80" Click="ClosePatientDataWindow_Click"></Button>
         </StackPanel>
-        <Label Content="Az adatok kitöltése hibás!" FontSize="20" FontWeight="SemiBold" Foreground="#FFA80000"
-               HorizontalAlignment="Left"/>
     </Grid>
 </Window>

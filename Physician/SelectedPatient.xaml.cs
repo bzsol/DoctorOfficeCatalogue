@@ -33,6 +33,7 @@ namespace Physician
             FirstNameTextBox.Text = patient.FirstName;
             SecondNameTextBox.Text = patient.LastName;
             HomeAddressTextBox.Text = patient.HomeAddress;
+            DiagnosisTextBox.Text = patient.Diagnose;
             
         }
 
@@ -52,6 +53,7 @@ namespace Physician
                 patient.FirstName = FirstNameTextBox.Text;
                 patient.LastName = SecondNameTextBox.Text;
                 PatientDataProvider.UpdatePatient(patient);
+                ErrorLabel.Visibility = Visibility.Collapsed;
                 Close();
             }
 

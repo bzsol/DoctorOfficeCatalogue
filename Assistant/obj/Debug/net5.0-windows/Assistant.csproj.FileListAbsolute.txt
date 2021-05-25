@@ -86,3 +86,5 @@ D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-win
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.baml
 D:\Github\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.g.cs
 D:\Github\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.baml
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\AssistantHelper.g.cs
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\AssistantHelper.baml

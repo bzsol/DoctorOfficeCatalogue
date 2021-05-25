@@ -7,12 +7,18 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="PhysicianHelper.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SelectedPatient.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PhysicianHelper.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SelectedPatient.xaml">

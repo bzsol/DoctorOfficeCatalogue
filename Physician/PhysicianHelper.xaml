@@ -1,0 +1,99 @@
+﻿<Window x:Class="Physician.PhysicianHelper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Physician"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        Title="Leírás" Height="750" Width="1000">
+    <WindowChrome.WindowChrome>
+        <WindowChrome ResizeBorderThickness="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.04*"></RowDefinition>
+            <RowDefinition Height="0.9*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <materialDesign:ColorZone Grid.Row="0" Width="1000" Height="25" Background="#FFA80000" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                                  Foreground="White" FontSize="16">
+            <Grid Width="1000">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.025*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <materialDesign:PackIcon Kind="InfoOutline" Grid.Column="0" Height="25" Width="25" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" FontSize="16" FontWeight="DemiBold" Margin="1">Leírás - Asszisztens panel</TextBlock>
+            </Grid>
+        </materialDesign:ColorZone>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Content="Általános" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
+                <TextBox Grid.Row="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+                    Ezen a felületen lehet megtekinteni a nyilvántartásba vett betegek listáját, valamint azoknak adatait a megfelelő oszlopban feltüntetve.
+                    Egy adott betegre rákattintva megjelenik a páciens összes adata egy külön szerkeszthető felületen. Itt kitölthető a diagnózis is, illetve
+                    törölhető a páciens a nyilvántartásból.
+                </TextBox>
+
+                <Label Grid.Row="2" Content="Név" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
+                <TextBox Grid.Row="3" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+                    A rendszer csakis valósnak tekinthető vezeték- és keresztnevet fogad el. Mindkét mező alatt feltüntetésre került egy példa, amely
+                    formának meg kell felelni. Ennek függvényében tehát a "Kovács József" elfogadható, míg a "kovács józsef" nem. Elírás esetén a név szerkeszthető.
+                </TextBox>
+
+                <Label Grid.Row="4" Content="Lakcím" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
+                <TextBox Grid.Row="5" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+                    A lakcím mezőben megadható a páciens bejelentett tartózkodási helye. Elírás esetén a lakcím szerkeszthető.
+                </TextBox>
+
+                <Label Grid.Row="6" Content="TAJ" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
+                <TextBox Grid.Row="7" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+                    A rendszer csakis valósnak tekinthető TAJ számot fogad el. A mező alatt feltüntetésre került egy példa, amely 
+                    formának meg kell felelni. Ennek függvényében tehát a "000 000 000" elfogadható, míg a "000000000" nem. Elírás esetén a TAJ szám szerkeszthető.
+                </TextBox>
+
+                <Label Grid.Row="8" Content="Diagnózis" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
+                <TextBox Grid.Row="9" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+                    A diagnózis mezőben feltüntethető a beteg kezelésének eredménye. Itt kerül bejegyzésre az orvos által felállított 
+                    kórmegállapítás. Későbbi eredmények esetén pedig bővíthető, illetve szerkeszthető.
+                </TextBox>
+
+                <Label Grid.Row="10" Content="Mentés, törlés" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
+                <TextBox Grid.Row="11" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+                    Változtatások esetén a "Mentés" gomb lenyomása szükséges, amely azonnal frissíti az összes megváltoztatott adatot. A "Törlés" gomb
+                    lenyomás minden adatot töröl, amely az adott beteghez tartozik, ez végleges és nem visszaállítható!
+                </TextBox>
+            </Grid>
+        </ScrollViewer>
+        <StackPanel Grid.Row="2">
+            <Button Grid.Row="3" Width="150" Margin="20" Content="Bezárás" Click="CloseWindow_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
