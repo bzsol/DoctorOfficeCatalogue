@@ -58,8 +58,7 @@ namespace Assistant
         {
             if (!string.IsNullOrEmpty(SearchTextBox.Text))
             {
-                var filteredList = PreferenceButton.Content.Equals("Név") ? PatientDataProvider.GetPatients().Where(x => x.FullName.Contains(SearchTextBox.Text)).ToList() :
-                    PatientDataProvider.GetPatients().Where(x => x.HIS.Contains(SearchTextBox.Text)).ToList();
+                var filteredList = MedicationDataProvider.GetMedications().Where(x => x.MedicationName.Contains(SearchTextBox.Text)).ToList();
                 MedicationList.ItemsSource = filteredList;
                 CountOfResultsLabel.Content = $"{filteredList.Count} találat";
                 CountOfResultsLabel.Visibility = Visibility.Visible;
@@ -69,24 +68,6 @@ namespace Assistant
                 UpdateData();
                 CountOfResultsLabel.Visibility = Visibility.Hidden;
             }
-        }
-
-        private void SearchPreference_Click(object sender, RoutedEventArgs e)
-        {
-            BrushConverter bc = new BrushConverter();
-            if (PreferenceButton.Content.Equals("Név"))
-            {
-                PreferenceButton.Content = "TAJ";
-                PreferenceButton.Background = (Brush)bc.ConvertFromString("#45B3E7");
-                PreferenceButton.BorderBrush = (Brush)bc.ConvertFromString("#45B3E7");
-            }
-            else
-            {
-                PreferenceButton.Content = "Név";
-                PreferenceButton.Background = (Brush)bc.ConvertFromString("#F44336");
-                PreferenceButton.BorderBrush = (Brush)bc.ConvertFromString("#F44336");
-            }
-            SearchTextBox.Text = string.Empty;
         }
     }
 }

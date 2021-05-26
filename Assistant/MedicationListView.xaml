@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Assistant"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="MedicationListView" Height="800" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
@@ -34,8 +35,7 @@
                     </Grid.RowDefinitions>
 
                     <Label Grid.Row="0" FontSize="20" FontWeight="SemiBold" Content="Keresés:" Margin="15 0 0 0"/>
-                    <Button Grid.Row="1" x:Name="PreferenceButton" Width="100" Height="25" Content="Név" HorizontalAlignment="Left" Margin="15 0 0 0"
-                            Click="SearchPreference_Click"/>
+                    <Button Grid.Row="1" x:Name="PreferenceButton" Width="100" Height="25" Content="Név" HorizontalAlignment="Left" Margin="15 0 0 0"/>
                 </Grid>
 
                 <TextBox Grid.Column="1" x:Name="SearchTextBox" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="Auto" Margin="10 5 10 10" FontSize="20"

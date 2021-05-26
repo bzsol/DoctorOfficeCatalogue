@@ -52,6 +52,11 @@ namespace Assistant
             ClearFields();
         }
 
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
         private void ClearFields()
         {
             MedNameBox.Text = string.Empty;

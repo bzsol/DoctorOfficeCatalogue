@@ -6,15 +6,33 @@
         xmlns:local="clr-namespace:Assistant"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MedicationView" Height="300" Width="500">
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        Title="Gyógyszer kezelő" Height="300" Width="500">
+    <WindowChrome.WindowChrome>
+        <WindowChrome ResizeBorderThickness="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="0.8*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
+        <materialDesign:ColorZone Grid.Row="0" Width="500" Height="25" Background="#FFA80000" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                                  Foreground="White" FontSize="16">
+            <Grid Width="500">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.055*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <materialDesign:PackIcon Kind="Pill" Grid.Column="0" Height="25" Width="25" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" FontSize="16" FontWeight="DemiBold" Margin="1">Gyógyszer kezelése</TextBlock>
+            </Grid>
+        </materialDesign:ColorZone>
+
+        <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -26,7 +44,7 @@
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Hatóanyag"></TextBox>
         </Grid>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -44,9 +62,10 @@
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Kiszerelés"></TextBox>
         </Grid>
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="150" Margin="20" Content="Hozzáadás" Click="AddMedication_Click"></Button>
-            <Button Width="150" Margin="20" Content="Törlés" Click="Clear_Click"></Button>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="130" Margin="20" Content="Hozzáadás" Click="AddMedication_Click"></Button>
+            <Button Width="130" Margin="20" Content="Törlés" Click="Clear_Click"></Button>
+            <Button Width="130" Margin="20" Content="Kilépés" Click="Close_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>
