@@ -79,13 +79,14 @@ namespace Assistant
         private void AddPatient_Click(object sender, RoutedEventArgs e)
         {
             Patient patient = new Patient();
-            if (Common.Validation.IsValidName(FirstNameTextBox.Text, SecondNameTextBox.Text) && (Common.Validation.IsValidHIS(HISTextBox.Text)))
+            if (Common.Validation.IsValidName(FirstNameTextBox.Text, SecondNameTextBox.Text) && Common.Validation.IsValidHIS(HISTextBox.Text)
+                && !string.IsNullOrEmpty(HomeAddressTextBox.Text.Trim()) && !string.IsNullOrEmpty(ComplaintTextBox.Text.Trim()))
             {
                 patient.FirstName = FirstNameTextBox.Text;
                 patient.LastName = SecondNameTextBox.Text;
                 patient.HIS = HISTextBox.Text;
-                patient.HomeAddress = HomeAddressTextBox.Text;
-                patient.Complaint = ComplaintTextBox.Text;
+                patient.HomeAddress = HomeAddressTextBox.Text.Trim();
+                patient.Complaint = ComplaintTextBox.Text.Trim();
                 patient.Intake = DateTime.Now.ToString("yyyy.MM.dd HH:mm");
                 patient.Diagnose = "";
                 PatientDataProvider.CreatePatient(patient);

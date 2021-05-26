@@ -14,10 +14,10 @@
      TextOptions.TextRenderingMode="Auto"
      WindowStartupLocation="CenterScreen"
      Background="{DynamicResource MaterialDesignPaper}"
-     FontFamily="{DynamicResource MaterialDesignFont}"
-     Loaded="List_Load">
+     FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -66,8 +66,33 @@
                 </materialDesign:PopupBox>
             </DockPanel>
         </materialDesign:ColorZone>
+        <materialDesign:ColorZone Grid.Row="1" Height="60" Background="White">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" FontSize="20" FontWeight="SemiBold" Content="Keresés:" Margin="15 0 0 0"/>
+                    <Button Grid.Row="1" x:Name="PreferenceButton" Width="100" Height="25" Content="Név" HorizontalAlignment="Left" Margin="15 0 0 0"
+                            Click="SearchPreference_Click"/>
+                </Grid>
+
+                <TextBox Grid.Column="1" x:Name="SearchTextBox" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="Auto" Margin="10 5 10 10" FontSize="20"
+                         Padding="0 0 10 0" KeyUp="SearchByCondition"/>
+
+                <Label Grid.Column="2" x:Name="CountOfResultsLabel" FontSize="20" Foreground="#A8A8A8" HorizontalAlignment="Center" Margin="0 20 0 10" Visibility="Hidden"></Label>
+            </Grid>
+        </materialDesign:ColorZone>
         <materialDesign:Card 
-                         Grid.Row="1"
+                         Grid.Row="2"
                           HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="Auto" Width="Auto"
                           
                              >

@@ -26,15 +26,15 @@ namespace Physician
     /// </summary>
     public partial class MainWindow : Window
     {
-        
         public void UpdateData()
         {
-                PatientList.ItemsSource = PatientDataProvider.GetPatients().ToList();
+            PatientList.ItemsSource = PatientDataProvider.GetPatients().ToList();
         }
 
         public MainWindow()
         {
             InitializeComponent();
+            UpdateData();
             Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
             
         }
@@ -59,28 +59,58 @@ namespace Physician
        
         private void List_Selection(object sender, SelectionChangedEventArgs e)
         {
-
-
             var Patient = PatientList.SelectedItem as Patient;
             if (Patient != null) {
                 var window = new SelectedPatient(Patient);
+                window.Closed += Window_Closed;
                 window.ShowDialog();
                 PatientList.UnselectAll();
-                PatientList.ItemsSource = null;
-                
+            }
+
+            if (!string.IsNullOrEmpty(SearchTextBox.Text))
+            {
+                SearchTextBox.Text = string.Empty;
             }
         }
 
-        private void List_Load(object sender,RoutedEventArgs e) {
-            DispatcherTimer dt = new DispatcherTimer();
-            dt.Interval = TimeSpan.FromSeconds(1);
-            dt.Tick += Dt_Tick;
-            dt.Start();
-
-        }
-        private void Dt_Tick(object sender, EventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
             UpdateData();
+        }
+
+        private void SearchByCondition(object sender, KeyEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(SearchTextBox.Text))
+            {
+                var filteredList = PreferenceButton.Content.Equals("Név") ? PatientDataProvider.GetPatients().Where(x => x.FullName.Contains(SearchTextBox.Text)).ToList() :
+                    PatientDataProvider.GetPatients().Where(x => x.HIS.Contains(SearchTextBox.Text)).ToList();
+                PatientList.ItemsSource = filteredList;
+                CountOfResultsLabel.Content = $"{filteredList.Count} találat";
+                CountOfResultsLabel.Visibility = Visibility.Visible;
+            } 
+            else
+            {
+                UpdateData();
+                CountOfResultsLabel.Visibility = Visibility.Hidden;
+            }     
+        }
+
+        private void SearchPreference_Click(object sender, RoutedEventArgs e)
+        {
+            BrushConverter bc = new BrushConverter();
+            if (PreferenceButton.Content.Equals("Név"))
+            {
+                PreferenceButton.Content = "TAJ";
+                PreferenceButton.Background = (Brush)bc.ConvertFromString("#45B3E7");
+                PreferenceButton.BorderBrush = (Brush)bc.ConvertFromString("#45B3E7");
+            }
+            else
+            {
+                PreferenceButton.Content = "Név";
+                PreferenceButton.Background = (Brush)bc.ConvertFromString("#F44336");
+                PreferenceButton.BorderBrush = (Brush)bc.ConvertFromString("#F44336");
+            }
+            SearchTextBox.Text = string.Empty;
         }
     }
 }
