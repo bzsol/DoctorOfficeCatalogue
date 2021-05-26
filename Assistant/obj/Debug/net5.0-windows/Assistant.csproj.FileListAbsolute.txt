@@ -88,3 +88,9 @@ D:\Github\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.
 D:\Github\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\Notification.baml
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\AssistantHelper.g.cs
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\AssistantHelper.baml
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\MedicationView.g.cs
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\MedicationView.baml
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\MedicationListView.g.cs
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\MedicationListView.baml
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\SelectedMedication.g.cs
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\obj\Debug\net5.0-windows\SelectedMedication.baml

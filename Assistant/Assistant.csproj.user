@@ -10,7 +10,16 @@
     <Compile Update="AssistantHelper.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MedicationListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MedicationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Notification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SelectedMedication.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,7 +30,16 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MedicationListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MedicationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Notification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SelectedMedication.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

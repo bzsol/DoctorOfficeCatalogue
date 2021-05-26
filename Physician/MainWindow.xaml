@@ -121,5 +121,7 @@
             </ListView>
         </materialDesign:Card>
         <Grid/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="272,539,0,0" Grid.Row="2" VerticalAlignment="Top" Click="MedicationShow"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="365,539,0,0" Grid.Row="2" VerticalAlignment="Top" Click="MedicationListShow"/>
     </Grid>
 </Window>

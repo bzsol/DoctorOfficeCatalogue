@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Assistant\App.xaml
-3-113910934
+62054867597
 
-8522112932
+12119989334
 197-2002262142
-AssistantHelper.xaml;MainWindow.xaml;Notification.xaml;
+AssistantHelper.xaml;MainWindow.xaml;MedicationListView.xaml;MedicationView.xaml;Notification.xaml;SelectedMedication.xaml;
 
-True
+False
 

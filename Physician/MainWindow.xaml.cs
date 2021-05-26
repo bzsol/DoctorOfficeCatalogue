@@ -56,7 +56,25 @@ namespace Physician
             };
             notification.ShowDialog();
         }
-       
+
+        private void MedicationShow(object sender, RoutedEventArgs e)
+        {
+            MedicationView physicianHelper = new MedicationView
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            physicianHelper.ShowDialog();
+        }
+
+        private void MedicationListShow(object sender, RoutedEventArgs e)
+        {
+            MedicationListView physicianHelper = new MedicationListView
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            physicianHelper.ShowDialog();
+        }
+
         private void List_Selection(object sender, SelectionChangedEventArgs e)
         {
             var Patient = PatientList.SelectedItem as Patient;
