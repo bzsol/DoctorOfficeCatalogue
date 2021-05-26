@@ -1,4 +1,5 @@
-﻿using Common.Model;
+﻿using Assistant;
+using Common.Model;
 using Physician.DataProvider;
 using System;
 using System.Collections.Generic;
@@ -58,6 +59,15 @@ namespace Physician
             }
 
             ErrorLabel.Visibility = Visibility.Visible;
+        }
+
+        private void MedicationListShow(object sender, RoutedEventArgs e)
+        {
+            MedicationListView medlist = new MedicationListView
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            medlist.ShowDialog();
         }
 
         private void ClosePatientDataWindow_Click(object sender, RoutedEventArgs e)

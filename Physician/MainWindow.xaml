@@ -49,6 +49,18 @@
                                 </Button>
                             </DockPanel>
                         </ListBoxItem>
+                        <ListBoxItem>
+                            <DockPanel>
+                                <Button x:Name="MedicationButton" Click="MedicationShow">
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Kind="Pill"
+                                         Height="25"
+                                         Width="25" />
+                                        <Label Content="Gyógyszerek"/>
+                                    </StackPanel>
+                                </Button>
+                            </DockPanel>
+                        </ListBoxItem>
                         <ListBoxItem >
                             <DockPanel>
                                 <Button x:Name="ExitButton" Click="ExitButton_Click">
@@ -121,7 +133,5 @@
             </ListView>
         </materialDesign:Card>
         <Grid/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="272,539,0,0" Grid.Row="2" VerticalAlignment="Top" Click="MedicationShow"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="365,539,0,0" Grid.Row="2" VerticalAlignment="Top" Click="MedicationListShow"/>
     </Grid>
 </Window>

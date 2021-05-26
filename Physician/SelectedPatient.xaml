@@ -7,7 +7,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Beteg adatai" Height="600" Width="800"
-        WindowStartupLocation="CenterScreen"
+        WindowStartupLocation="CenterOwner"
         WindowStyle="None"
         BorderBrush="#FFA80000"
         BorderThickness="2"
@@ -72,6 +72,7 @@
         <StackPanel Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
             <Label x:Name="ErrorLabel" Content="Az adatok kitöltése hibás!" FontSize="20" FontWeight="SemiBold" Foreground="#FFA80000"
                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0 210 0" Visibility="Collapsed"/>
+            <Button x:Name="MedicationListView" Content="Kezelés" Margin="15" Width="80" Click="MedicationListShow"></Button>
             <Button x:Name="DeletePatient" Content="Törlés" Margin="15" Width="80" Click="DeletePatient_Click"></Button>
             <Button x:Name="SavePatientData" Content="Mentés" Margin="15" Width="80" Click="SavePatientData_Click"></Button>
             <Button x:Name="ClosePatientDataWindow" Content="Kilépés" Margin="15" Width="80" Click="ClosePatientDataWindow_Click"></Button>

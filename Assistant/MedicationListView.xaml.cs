@@ -37,7 +37,10 @@ namespace Assistant
             Medication med = MedicationList.SelectedItem as Medication;
             if (med != null)
             {
-                var window = new SelectedMedication(med);
+                var window = new SelectedMedication(med)
+                {
+                    Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+                };
                 window.Closed += Window_Closed;
                 window.ShowDialog();
                 MedicationList.UnselectAll();

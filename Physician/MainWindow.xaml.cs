@@ -59,27 +59,21 @@ namespace Physician
 
         private void MedicationShow(object sender, RoutedEventArgs e)
         {
-            MedicationView physicianHelper = new MedicationView
+            MedicationView medcontrol = new MedicationView
             {
                 Owner = (Window)PresentationSource.FromVisual(this).RootVisual
             };
-            physicianHelper.ShowDialog();
-        }
-
-        private void MedicationListShow(object sender, RoutedEventArgs e)
-        {
-            MedicationListView physicianHelper = new MedicationListView
-            {
-                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
-            };
-            physicianHelper.ShowDialog();
+            medcontrol.ShowDialog();
         }
 
         private void List_Selection(object sender, SelectionChangedEventArgs e)
         {
             var Patient = PatientList.SelectedItem as Patient;
             if (Patient != null) {
-                var window = new SelectedPatient(Patient);
+                var window = new SelectedPatient(Patient)
+                {
+                    Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+                };
                 window.Closed += Window_Closed;
                 window.ShowDialog();
                 PatientList.UnselectAll();

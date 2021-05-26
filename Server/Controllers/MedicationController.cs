@@ -34,16 +34,20 @@ namespace Server.Controllers
         public ActionResult Put([FromBody] Medication med)
         {
             var meds = MedicationRepo.GetMedications().ToList();
-            var ChoosenOne = meds.FirstOrDefault(e => e.ID.Equals(med.ID));
-            if (ChoosenOne.Equals(null))
+            var selected = meds.FirstOrDefault(e => e.ID.Equals(med.ID));
+            if (selected.Equals(null))
             {
                 return NotFound();
             }
             else
             {
-                ChoosenOne.ID = med.ID;
-                ChoosenOne.MedicationName = med.MedicationName;
-
+                selected.ID = med.ID;
+                selected.MedicationName = med.MedicationName;
+                selected.ActiveIngredient = med.ActiveIngredient;
+                selected.MinimumAge = med.MinimumAge;
+                selected.MaximumAge = med.MaximumAge;
+                selected.Dosage = med.Dosage;
+                selected.Packaging = med.Packaging;
                 MedicationRepo.SavePatients(meds);
                 return Ok();
             }

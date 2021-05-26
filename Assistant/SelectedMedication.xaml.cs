@@ -32,6 +32,7 @@ namespace Assistant
 
         private void SetupShownDatas()
         {
+            MedicationNameTextBlock.Text = $"{medication.MedicationName} adatai";
             MedNameBox.Text = medication.MedicationName;
             ActIngredientBox.Text = medication.ActiveIngredient;
             MinAgeBox.Text = medication.MinimumAge.ToString();
@@ -50,8 +51,8 @@ namespace Assistant
         {
             if (GetValidationResult())
             {
-                medication.MedicationName = MedNameBox.Text;
                 medication.ActiveIngredient = ActIngredientBox.Text;
+                medication.MedicationName = MedNameBox.Text;
                 medication.MinimumAge = int.Parse(MinAgeBox.Text);
                 medication.MaximumAge = int.Parse(MaxAgeBox.Text);
                 medication.Dosage = DosageBox.Text;
