@@ -37,6 +37,7 @@ namespace Assistant
             HomeAddressTextBox.Text = "";
             HISTextBox.Text = "";
             ComplaintTextBox.Text = "";
+            DateOfBirth.SelectedDate = null;
         }
         private void TemporaryDisableTextFields() {
             FirstNameTextBox.IsReadOnly = true;
