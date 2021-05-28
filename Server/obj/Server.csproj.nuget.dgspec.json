@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Github\\DoctorOfficeCatalogue\\Server\\Server.csproj": {}
+    "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Server\\Server.csproj": {}
   },
   "projects": {
-    "E:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
+    "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "E:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Zsolti\\.nuget\\packages\\",
-        "outputPath": "E:\\Github\\DoctorOfficeCatalogue\\Common\\obj\\",
+        "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\koszt\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Zsolti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\koszt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,21 +57,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Github\\DoctorOfficeCatalogue\\Server\\Server.csproj": {
+    "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Github\\DoctorOfficeCatalogue\\Server\\Server.csproj",
+        "projectUniqueName": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "E:\\Github\\DoctorOfficeCatalogue\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\Zsolti\\.nuget\\packages\\",
-        "outputPath": "E:\\Github\\DoctorOfficeCatalogue\\Server\\obj\\",
+        "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\koszt\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Zsolti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\koszt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +85,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
-                "projectPath": "E:\\Github\\DoctorOfficeCatalogue\\Common\\Common.csproj"
+              "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj": {
+                "projectPath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Common\\Common.csproj"
               }
             }
           }
@@ -118,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

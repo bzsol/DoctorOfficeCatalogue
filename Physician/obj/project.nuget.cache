@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ncyzPJ5MD2G5nFvLpiA66iCVdPlFTF9cxt5LQjs0Q3ulv6rBruve4Sq+tyJvXAnI0GlwwUNB4tGBdYZKa2uTug==",
+  "dgSpecHash": "hOmQcCJcGBaMuHSS5d6H7t2d52jYZ6ofS3fSjGo9KgXPugfkwPSYwnjghulRTYNdwB7QXxG9NJ2GgyzHiYzooQ==",
   "success": true,
-  "projectFilePath": "E:\\Github\\DoctorOfficeCatalogue\\Physician\\Physician.csproj",
+  "projectFilePath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Physician\\Physician.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Zsolti\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
-    "C:\\Users\\Zsolti\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512",
-    "C:\\Users\\Zsolti\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\koszt\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\koszt\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512",
+    "C:\\Users\\koszt\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

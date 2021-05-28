@@ -13,5 +13,6 @@ namespace Common.Model
         public string ActiveIngredient { get; set; }
         public string Dosage { get; set; }
         public string Packaging { get; set; }
+        public string Description { get; set; }
     }
 }

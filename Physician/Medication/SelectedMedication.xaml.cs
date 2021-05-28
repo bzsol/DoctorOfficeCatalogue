@@ -37,6 +37,11 @@ namespace Physician.Medication
             MaxAgeBox.Text = medication.MaximumAge.ToString();
             DosageBox.Text = medication.Dosage;
             PackagingBox.Text = medication.Packaging;
+            DescriptionBox.Text = medication.Description;
+            if (PatientObserver.Instance.Medications.Contains(medication.MedicationName))
+            {
+                AddMedication.Content = "Eltávolítás";
+            }
         }
 
         private void DeleteMedication_Click(object sender, RoutedEventArgs e)
@@ -55,12 +60,26 @@ namespace Physician.Medication
                 medication.MaximumAge = int.Parse(MaxAgeBox.Text);
                 medication.Dosage = DosageBox.Text;
                 medication.Packaging = PackagingBox.Text;
+                medication.Description = DescriptionBox.Text;
                 MedicationDataProvider.UpdateMedication(medication);
                 ErrorLabel.Visibility = Visibility.Collapsed;
                 Close();
             }
 
             ErrorLabel.Visibility = Visibility.Visible;
+        }
+
+        private void AddMedication_Click(object sender, RoutedEventArgs e)
+        {
+            if (PatientObserver.Instance.Medications.Contains(medication.MedicationName))
+            {
+                PatientObserver.Instance.Medications.Remove(medication.MedicationName);
+            }
+            else
+            {
+                PatientObserver.Instance.Medications.Add(medication.MedicationName);
+            }
+            Close();
         }
 
         private void CloseMedicationDataWindow_Click(object sender, RoutedEventArgs e)

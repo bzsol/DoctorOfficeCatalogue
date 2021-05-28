@@ -81,7 +81,7 @@ namespace Assistant
         {
             Patient patient = new Patient();
             if (Common.Validation.IsValidName(FirstNameTextBox.Text, SecondNameTextBox.Text) && Common.Validation.IsValidHIS(HISTextBox.Text)
-                && !string.IsNullOrEmpty(HomeAddressTextBox.Text.Trim()) && !string.IsNullOrEmpty(ComplaintTextBox.Text.Trim()))
+                && !string.IsNullOrEmpty(HomeAddressTextBox.Text.Trim()) && !string.IsNullOrEmpty(ComplaintTextBox.Text.Trim()) && DateOfBirth.SelectedDate != null)
             {
                 patient.FirstName = FirstNameTextBox.Text;
                 patient.LastName = SecondNameTextBox.Text;
@@ -91,6 +91,8 @@ namespace Assistant
                 patient.Intake = DateTime.Now.ToString("yyyy.MM.dd HH:mm");
                 patient.Diagnose = string.Empty;
                 patient.DateOfBirth = DateOfBirth.SelectedDate.Value;
+                patient.Age = Patient.CalculateAge(patient.DateOfBirth);
+                patient.Medications = new List<string>();
                 PatientDataProvider.CreatePatient(patient);
                 ClearTextFields();
                 TemporaryDisableTextFields();

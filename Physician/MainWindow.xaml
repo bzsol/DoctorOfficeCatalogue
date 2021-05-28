@@ -134,7 +134,9 @@
                         <GridViewColumn DisplayMemberBinding="{Binding Complaint}"
                             Header="Panasz" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Allergy}"
-                            Header="Ismert Allergia" Width="Auto"/>
+                            Header="Allergia" Width="Auto"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding GetMedications}"
+                            Header="Gyógyszerek" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Diagnose}"
                             Header="Diagnózis" Width="Auto"/>
                     </GridView>

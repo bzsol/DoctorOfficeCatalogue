@@ -48,6 +48,7 @@ namespace Server.Controllers
                 selected.MaximumAge = med.MaximumAge;
                 selected.Dosage = med.Dosage;
                 selected.Packaging = med.Packaging;
+                selected.Description = med.Description;
                 MedicationRepo.SavePatients(meds);
                 return Ok();
             }

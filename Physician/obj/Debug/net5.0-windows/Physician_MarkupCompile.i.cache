@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\Github\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\obj\Debug\net5.0-windows\
 Physician
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-E:\Github\DoctorOfficeCatalogue\Physician\App.xaml
-6697477328
+D:\ProgramozásProjektek\C#\DoctorOfficeCatalogue\Physician\App.xaml
+6-478495939
 
-121013918955
-198-1644950086
+13-588168722
+198-580649832
 MainWindow.xaml;Medication\MedicationListView.xaml;Medication\MedicationView.xaml;Medication\SelectedMedication.xaml;PhysicianHelper.xaml;SelectedPatient.xaml;
 
 True

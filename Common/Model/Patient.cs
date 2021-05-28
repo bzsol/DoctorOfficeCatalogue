@@ -33,12 +33,27 @@ namespace Common.Model
 
         public DateTime DateOfBirth { get; set;}
 
+        public int Age { get; set; }
+
+        public static int CalculateAge(DateTime date)
+        {         
+            return ((DateTime.Now.Year - date.Year) - (DateTime.Now.DayOfYear < date.DayOfYear ? 1 : 0));
+        }
+
         public string AgeGet {
             get {
-                var age = ((DateTime.Now.Year - DateOfBirth.Year) - (DateTime.Now.DayOfYear < DateOfBirth.Year ? 1 : 0)).ToString();
-                return $"{age} éves";
+                return $"{Age} éves";
             }
         }
         public string Allergy { get; set; }
+        public List<string> Medications { get; set; }
+
+        public string GetMedications
+        {
+            get
+            {
+                return string.Join("\n", Medications);
+            }
+        }
     }
 }

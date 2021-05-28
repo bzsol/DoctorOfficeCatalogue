@@ -28,7 +28,8 @@ namespace Physician
         {
             InitializeComponent();
             patient = ChoosenOne;
-            PatientNameTextBlock.Text = $"{patient.FirstName} {patient.LastName} adatai";
+            PatientObserver.Instance = patient;
+            PatientNameTextBlock.Text = $"{patient.FullName} adatai";
             HISTextBox.Text = patient.HIS;
             ComplaintTextBox.Text = patient.Complaint;
             FirstNameTextBox.Text = patient.FirstName;
@@ -36,13 +37,13 @@ namespace Physician
             HomeAddressTextBox.Text = patient.HomeAddress;
             DiagnosisTextBox.Text = patient.Diagnose;
             AllergyTextBox.Text = patient.Allergy;
-            DateOfBirth.SelectedDate = patient.DateOfBirth.Date;
-            
+            DateOfBirth.SelectedDate = patient.DateOfBirth.Date;    
         }
 
         private void DeletePatient_Click(object sender, RoutedEventArgs e)
         {
             PatientDataProvider.DeletePatient(patient.ID);
+            PatientObserver.Instance = null;
             Close();
         }
 
@@ -55,9 +56,12 @@ namespace Physician
                 patient.HIS = HISTextBox.Text;
                 patient.FirstName = FirstNameTextBox.Text;
                 patient.LastName = SecondNameTextBox.Text;
+                patient.DateOfBirth = DateOfBirth.SelectedDate.Value;
+                patient.Age = Patient.CalculateAge(patient.DateOfBirth);
                 patient.Allergy = AllergyTextBox.Text;
                 PatientDataProvider.UpdatePatient(patient);
                 ErrorLabel.Visibility = Visibility.Collapsed;
+                PatientObserver.Instance = null;
                 Close();
             }
 
@@ -66,7 +70,7 @@ namespace Physician
 
         private void MedicationListShow(object sender, RoutedEventArgs e)
         {
-            Physician.Medication.MedicationListView medlist = new Physician.Medication.MedicationListView
+            Medication.MedicationListView medlist = new Medication.MedicationListView
             {
                 Owner = (Window)PresentationSource.FromVisual(this).RootVisual
             };
@@ -74,7 +78,8 @@ namespace Physician
         }
 
         private void ClosePatientDataWindow_Click(object sender, RoutedEventArgs e)
-        { 
+        {
+            PatientObserver.Instance = null;
             Close();
         }
     }

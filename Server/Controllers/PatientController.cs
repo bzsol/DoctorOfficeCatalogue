@@ -49,7 +49,9 @@ namespace Server.Controllers
                 ChoosenOne.Complaint = patient.Complaint;
                 ChoosenOne.Diagnose = patient.Diagnose;
                 ChoosenOne.DateOfBirth = patient.DateOfBirth;
+                ChoosenOne.Age = Patient.CalculateAge(patient.DateOfBirth);
                 ChoosenOne.Allergy = patient.Allergy;
+                ChoosenOne.Medications = patient.Medications;
                 PatientRepo.SavePatients(patients);
                 return Ok();
             }

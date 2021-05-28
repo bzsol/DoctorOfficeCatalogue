@@ -55,18 +55,18 @@
             <Label Grid.Row="6" Grid.Column="0" Content="Rövid leírás:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
 
             <TextBox Grid.Row="0" Grid.Column="1" x:Name="MedNameBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" Padding="0 10 0 0"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="ActIngredientBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" Padding="0 10 0 0"/>
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="MinAgeBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" Padding="0 10 0 0"/>
             <TextBox Grid.Row="3" Grid.Column="1" x:Name="MaxAgeBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20"/>
+                 Width="Auto" FontSize="20" Padding="0 10 0 0"/>
             <TextBox x:Name="DosageBox" Grid.Row="4" Grid.Column="1" Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                     Width="Auto" FontSize="20"/>
+                     Width="Auto" FontSize="20" Padding="0 10 0 0"/>
             <TextBox x:Name="PackagingBox" Grid.Row="5" Grid.Column="1" Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                     Width="Auto" FontSize="20"/>
-            <TextBox x:Name="DiagnosisTextBox" Grid.Row="6" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
+                     Width="Auto" FontSize="20" Padding="0 10 0 0"/>
+            <TextBox x:Name="DescriptionBox" Grid.Row="6" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
                 Height="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" materialDesign:HintAssist.Hint="Leírás" FontSize="20"/>
         </Grid>
 
@@ -75,6 +75,7 @@
                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0 210 0" Visibility="Collapsed"/>
             <Button x:Name="DeletePatient" Content="Törlés" Margin="15" Width="80" Click="DeleteMedication_Click"></Button>
             <Button x:Name="SavePatientData" Content="Mentés" Margin="15" Width="80" Click="SaveMedicationData_Click"></Button>
+            <Button x:Name="AddMedication" Content="Felírás" Margin="15" Width="100" Click="AddMedication_Click"></Button>
             <Button x:Name="ClosePatientDataWindow" Content="Kilépés" Margin="15" Width="80" Click="CloseMedicationDataWindow_Click"></Button>
         </StackPanel>
     </Grid>
