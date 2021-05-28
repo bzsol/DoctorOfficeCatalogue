@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+0kB4ZvlcW8sQwRnDQCY6Kus632T/GfiCTEw90sy6I0ODldpc/8xUtr/uhATGi0CYM8TitVSJBkgrz0Yy1/aoQ==",
+  "dgSpecHash": "R533yvXclMsrONfaZ+WOg8+ybNTyIKx3OWZASXO1l1TbCZu0fw5oCpRGADp5/eOoON/8n15lDzxFuBI55X8TgQ==",
   "success": true,
-  "projectFilePath": "D:\\ProgramozásProjektek\\C#\\DoctorOfficeCatalogue\\Server\\Server.csproj",
+  "projectFilePath": "E:\\Github\\DoctorOfficeCatalogue\\Server\\Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

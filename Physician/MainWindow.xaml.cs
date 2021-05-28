@@ -59,7 +59,7 @@ namespace Physician
 
         private void MedicationShow(object sender, RoutedEventArgs e)
         {
-            MedicationView medcontrol = new MedicationView
+            Physician.Medication.MedicationView medcontrol = new Physician.Medication.MedicationView
             {
                 Owner = (Window)PresentationSource.FromVisual(this).RootVisual
             };

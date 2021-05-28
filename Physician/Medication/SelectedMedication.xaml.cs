@@ -1,5 +1,4 @@
-﻿using Assistant.DataProvider;
-using Common.Model;
+﻿using Physician.DataProvider;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,22 +13,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Assistant
+namespace Physician.Medication
 {
     /// <summary>
     /// Interaction logic for SelectedMedication.xaml
     /// </summary>
     public partial class SelectedMedication : Window
     {
-        private Medication medication;
+        private Common.Model.Medication medication;
 
-        public SelectedMedication(Medication med)
+        public SelectedMedication(Common.Model.Medication med)
         {
             InitializeComponent();
             medication = med;
             SetupShownDatas();
         }
-
         private void SetupShownDatas()
         {
             MedicationNameTextBlock.Text = $"{medication.MedicationName} adatai";

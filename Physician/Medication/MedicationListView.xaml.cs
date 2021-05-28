@@ -1,6 +1,4 @@
-﻿using Assistant.DataProvider;
-using Common.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Physician.DataProvider;
 
-namespace Assistant
+namespace Physician.Medication
 {
     /// <summary>
     /// Interaction logic for MedicationListView.xaml
@@ -26,15 +25,13 @@ namespace Assistant
             InitializeComponent();
             UpdateData();
         }
-
         public void UpdateData()
         {
             MedicationList.ItemsSource = MedicationDataProvider.GetMedications().ToList();
         }
-
         private void List_Selection(object sender, SelectionChangedEventArgs e)
         {
-            Medication med = MedicationList.SelectedItem as Medication;
+            Common.Model.Medication med = MedicationList.SelectedItem as Common.Model.Medication;
             if (med != null)
             {
                 var window = new SelectedMedication(med)
@@ -73,4 +70,5 @@ namespace Assistant
             }
         }
     }
+
 }

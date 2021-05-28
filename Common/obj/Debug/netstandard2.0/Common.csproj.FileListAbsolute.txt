@@ -16,3 +16,12 @@ D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.AssemblyI
 D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
 D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.dll
 D:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.pdb
+E:\Github\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.deps.json
+E:\Github\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.dll
+E:\Github\DoctorOfficeCatalogue\Common\bin\Debug\netstandard2.0\Common.pdb
+E:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+E:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+E:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+E:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+E:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.dll
+E:\Github\DoctorOfficeCatalogue\Common\obj\Debug\netstandard2.0\Common.pdb

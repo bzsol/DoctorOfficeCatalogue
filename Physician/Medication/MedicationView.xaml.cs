@@ -1,5 +1,4 @@
-﻿using Assistant.DataProvider;
-using Common.Model;
+﻿using Physician.DataProvider;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Assistant
+namespace Physician.Medication
 {
     /// <summary>
     /// Interaction logic for MedicationView.xaml
@@ -25,12 +24,11 @@ namespace Assistant
         {
             InitializeComponent();
         }
-
         private void AddMedication_Click(object sender, RoutedEventArgs e)
         {
             if (GetValidationResult())
             {
-                MedicationDataProvider.CreateMedication(new Medication
+                MedicationDataProvider.CreateMedication(new Common.Model.Medication
                 {
                     MedicationName = MedNameBox.Text,
                     MinimumAge = int.Parse(MinAgeBox.Text),
@@ -84,5 +82,5 @@ namespace Assistant
 
             return true;
         }
-    }
+}
 }

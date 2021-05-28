@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Medication\MedicationListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Medication\MedicationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Medication\SelectedMedication.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PhysicianHelper.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,6 +25,15 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Medication\MedicationListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Medication\MedicationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Medication\SelectedMedication.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PhysicianHelper.xaml">
