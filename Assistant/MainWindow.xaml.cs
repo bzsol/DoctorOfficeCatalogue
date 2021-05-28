@@ -89,7 +89,8 @@ namespace Assistant
                 patient.HomeAddress = HomeAddressTextBox.Text.Trim();
                 patient.Complaint = ComplaintTextBox.Text.Trim();
                 patient.Intake = DateTime.Now.ToString("yyyy.MM.dd HH:mm");
-                patient.Diagnose = "";
+                patient.Diagnose = string.Empty;
+                patient.DateOfBirth = DateOfBirth.SelectedDate.Value;
                 PatientDataProvider.CreatePatient(patient);
                 ClearTextFields();
                 TemporaryDisableTextFields();

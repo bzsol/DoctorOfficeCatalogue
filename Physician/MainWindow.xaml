@@ -105,27 +105,36 @@
         </materialDesign:ColorZone>
         <materialDesign:Card 
                          Grid.Row="2"
-                          HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="Auto" Width="Auto"
-                          
-                             >
-            <ListView ItemsSource="{Binding Patient}" Name="PatientList" VerticalAlignment="Top" HorizontalAlignment="Stretch" Width="Auto" SelectionMode="Single" SelectionChanged="List_Selection" HorizontalContentAlignment="Stretch">
+                          HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="Auto" Width="Auto" >
+
+            <ListView ItemsSource="{Binding Patient}" Name="PatientList" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="Auto" SelectionMode="Single" SelectionChanged="List_Selection" >
+                <ListView.Resources>
+                    <DataTemplate x:Key="Templ">
+                        <TextBlock HorizontalAlignment="Center" Text="{Binding}" FontSize="20"/>
+                    </DataTemplate>
+                </ListView.Resources>
                 <ListView.View>
                     <GridView>
                         <GridView.ColumnHeaderContainerStyle>
                             <Style BasedOn="{StaticResource {x:Type GridViewColumnHeader}}" TargetType="{x:Type GridViewColumnHeader}">
-                                <Setter Property="IsHitTestVisible" Value="True"/>
+                                <Setter Property="IsHitTestVisible" Value="False"/>
                             </Style>
                         </GridView.ColumnHeaderContainerStyle>
+                        
                         <GridViewColumn DisplayMemberBinding="{Binding FullName}"
                             Header="Név" Width="Auto"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding AgeGet}"
+                            Header="Kor" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding HomeAddress}"
-                            Header="Lakcím" Width="Auto" />
+                            Header="Lakcím" Width="Auto"   />
                         <GridViewColumn DisplayMemberBinding="{Binding HIS}"
                             Header="TAJ szám" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Intake}"
                             Header="Látogatás" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Complaint}"
                             Header="Panasz" Width="Auto"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Allergy}"
+                            Header="Ismert Allergia" Width="Auto"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Diagnose}"
                             Header="Diagnózis" Width="Auto"/>
                     </GridView>

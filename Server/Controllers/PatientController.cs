@@ -48,6 +48,8 @@ namespace Server.Controllers
                 ChoosenOne.Intake = patient.Intake;
                 ChoosenOne.Complaint = patient.Complaint;
                 ChoosenOne.Diagnose = patient.Diagnose;
+                ChoosenOne.DateOfBirth = patient.DateOfBirth;
+                ChoosenOne.Allergy = patient.Allergy;
                 PatientRepo.SavePatients(patients);
                 return Ok();
             }

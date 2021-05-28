@@ -35,6 +35,8 @@ namespace Physician
             SecondNameTextBox.Text = patient.LastName;
             HomeAddressTextBox.Text = patient.HomeAddress;
             DiagnosisTextBox.Text = patient.Diagnose;
+            AllergyTextBox.Text = patient.Allergy;
+            DateOfBirth.SelectedDate = patient.DateOfBirth.Date;
             
         }
 
@@ -53,6 +55,7 @@ namespace Physician
                 patient.HIS = HISTextBox.Text;
                 patient.FirstName = FirstNameTextBox.Text;
                 patient.LastName = SecondNameTextBox.Text;
+                patient.Allergy = AllergyTextBox.Text;
                 PatientDataProvider.UpdatePatient(patient);
                 ErrorLabel.Visibility = Visibility.Collapsed;
                 Close();

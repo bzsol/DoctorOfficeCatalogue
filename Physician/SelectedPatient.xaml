@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Physician"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Beteg adatai" Height="600" Width="800"
+        Title="Beteg adatai" Height="800" Width="800"
         WindowStartupLocation="CenterOwner"
         WindowStyle="None"
         BorderBrush="#FFA80000"
@@ -39,6 +39,8 @@
                 <RowDefinition Height="0.8*"></RowDefinition>
                 <RowDefinition Height="0.8*"></RowDefinition>
                 <RowDefinition Height="0.8*"></RowDefinition>
+                <RowDefinition Height="0.8*"></RowDefinition>
+                <RowDefinition Height="0.8*"></RowDefinition>
                 <RowDefinition Height="1.75*"></RowDefinition>
                 <RowDefinition Height="1.75*"></RowDefinition>
             </Grid.RowDefinitions>
@@ -50,23 +52,29 @@
 
             <Label Grid.Row="0" Grid.Column="0" Content="Vezetéknév:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
             <Label Grid.Row="1" Grid.Column="0" Content="Keresztnév:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
-            <Label Grid.Row="2" Grid.Column="0" Content="Lakcím:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
-            <Label Grid.Row="3" Grid.Column="0" Content="TAJ-szám:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
-            <Label Grid.Row="4" Grid.Column="0" Content="Panasz:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
-            <Label Grid.Row="5" Grid.Column="0" Content="Diagnózis:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
+            <Label Grid.Row="2" Grid.Column="0" Content="Születési dátum:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
+            <Label Grid.Row="3" Grid.Column="0" Content="Lakcím:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
+            <Label Grid.Row="4" Grid.Column="0" Content="TAJ-szám:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
+            <Label Grid.Row="5" Grid.Column="0" Content="Allergia:" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
+            <Label Grid.Row="6" Grid.Column="0" Content="Panasz:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
+            <Label Grid.Row="7" Grid.Column="0" Content="Diagnózis:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="SemiBold"></Label>
 
             <TextBox Grid.Row="0" Grid.Column="1" x:Name="SecondNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Kovács"/>
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Kovács" Padding="0,12,0,0"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="FirstNameTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="József"/>
-            <TextBox Grid.Row="2" Grid.Column="1" x:Name="HomeAddressTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Debrecen, Kossuth utca 1."/>
-            <TextBox Grid.Row="3" Grid.Column="1" x:Name="HISTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="000 000 000"/>
-            <TextBox x:Name="ComplaintTextBox" Grid.Row="4" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
-                Height="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" FontSize="20" IsHitTestVisible="False"/>
-            <TextBox x:Name="DiagnosisTextBox" Grid.Row="5" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
-                Height="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" materialDesign:HintAssist.Hint="Diagnózis" FontSize="20"/>
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="József" Padding="0,12,0,0"/>
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="HomeAddressTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Debrecen, Kossuth utca 1." Padding="0,12,0,0"/>
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="HISTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="000 000 000" Padding="0,12,0,0"/>
+            <TextBox Grid.Row="5" Grid.Column="1" x:Name="AllergyTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Pollen Allergia" Padding="0,12,0,0"/>
+            <TextBox x:Name="ComplaintTextBox" Grid.Row="6" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
+                Height="110" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" FontSize="20" IsHitTestVisible="False"/>
+            <TextBox x:Name="DiagnosisTextBox" Grid.Row="7" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
+                Height="110" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" materialDesign:HintAssist.Hint="Diagnózis" FontSize="20"/>
+            <DatePicker
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="0,0,5,0" FontSize="20" materialDesign:HintAssist.HelperText="1970.01.01." Name="DateOfBirth" Grid.Row="2" Grid.Column="1" />
         </Grid>
 
         <StackPanel Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">

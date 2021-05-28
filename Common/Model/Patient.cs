@@ -16,7 +16,7 @@ namespace Common.Model
         {
             get
             {
-                return $"{FirstName} {LastName}";
+                return $"{LastName} {FirstName}";
             }
         }
 
@@ -30,5 +30,15 @@ namespace Common.Model
         public string Complaint { get; set; }
 
         public string Diagnose { get; set; }
+
+        public DateTime DateOfBirth { get; set;}
+
+        public string AgeGet {
+            get {
+                var age = ((DateTime.Now.Year - DateOfBirth.Year) - (DateTime.Now.DayOfYear < DateOfBirth.Year ? 1 : 0)).ToString();
+                return $"{age} éves";
+            }
+        }
+        public string Allergy { get; set; }
     }
 }
