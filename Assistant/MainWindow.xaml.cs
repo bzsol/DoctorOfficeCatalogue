@@ -92,12 +92,12 @@ namespace Assistant
                 patient.Diagnose = string.Empty;
                 patient.DateOfBirth = DateOfBirth.SelectedDate.Value;
                 patient.Age = Patient.CalculateAge(patient.DateOfBirth);
+                patient.Allergy = string.Empty;
                 patient.Medications = new List<string>();
                 PatientDataProvider.CreatePatient(patient);
                 ClearTextFields();
                 TemporaryDisableTextFields();
                 SnackbarOK.IsActive = true;
-
             }
             else {
                 SnackbarPB.IsActive = true;
@@ -110,6 +110,16 @@ namespace Assistant
             SnackbarPB.IsActive = false;
             OpenTextFields();
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Notification notification = new Notification
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            notification.ShowDialog();
+            e.Cancel = true;
         }
     }
 }

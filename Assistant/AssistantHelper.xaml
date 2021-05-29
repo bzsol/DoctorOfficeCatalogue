@@ -13,7 +13,7 @@
         <WindowChrome ResizeBorderThickness="0" CaptionHeight="0"/>
     </WindowChrome.WindowChrome>
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="0.04*"></RowDefinition>
             <RowDefinition Height="0.9*"></RowDefinition>
@@ -28,13 +28,19 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <materialDesign:PackIcon Kind="InfoOutline" Grid.Column="0" Height="25" Width="25" Margin="0,0,0,0" VerticalAlignment="Center"/>
-                <TextBlock Grid.Column="1" FontSize="16" FontWeight="DemiBold" Margin="1">Leírás - Orvosi panel</TextBlock>
+                <TextBlock Grid.Column="1" FontSize="16" FontWeight="DemiBold" Margin="1">Leírás - Asszisztens panel</TextBlock>
             </Grid>
         </materialDesign:ColorZone>
 
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="109*"/>
+                    <ColumnDefinition Width="874*"/>
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
                     <RowDefinition Height="0.1*"></RowDefinition>
                     <RowDefinition Height="0.2*"></RowDefinition>
                     <RowDefinition Height="0.1*"></RowDefinition>
@@ -47,37 +53,44 @@
                     <RowDefinition Height="0.2*"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <Label Grid.Row="0" Content="Általános" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
-                <TextBox Grid.Row="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
-                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+                <Label Grid.Row="0" Content="Általános" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Center" Margin="15,0,0,0" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Row="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="16,5,17,5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False" Grid.ColumnSpan="2">
                     Ezen a felületen tud felvenni egy új beteget a nyilvántartásba. A felvétel sikeres, amennyiben minden adat kitöltésre került és 
                     az adatok megfelelőek. Ezután a "Felvétel" gomb segítségével mentésre kerülnek a megadott adatok. A "Törlés" gomb segítségével pedig 
                     minden mező üres lesz.
                 </TextBox>
-                
-                <Label Grid.Row="2" Content="Név" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
-                <TextBox Grid.Row="3" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
-                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+
+                <Label Grid.Row="2" Content="Név" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Center" Margin="15,0,0,0" Grid.ColumnSpan="2"></Label>
+                <TextBox Grid.Row="3" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="16,5,17,5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False" Grid.ColumnSpan="2">
                     A rendszer csakis valósnak tekinthető vezeték- és keresztnevet fogad el. Mindkét mező alatt feltüntetésre került egy példa, amely
                     formának meg kell felelni. Ennek függvényében tehát a "Kovács József" elfogadható, míg a "kovács józsef" nem. Elírás esetén a név szerkeszthető.
                 </TextBox>
-                
-                <Label Grid.Row="4" Content="Lakcím" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
-                <TextBox Grid.Row="5" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
-                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+
+                <Label Grid.Row="4" Content="Születési dátum" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Center" Margin="15,0,0,0" Grid.ColumnSpan="2"></Label>
+                <TextBox Grid.Row="5" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="16,5,17,5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False" Grid.ColumnSpan="2">
+                    A születési dátum mezőben tölthető ki a páciens születési dátuma "ÉÉÉÉ. HH. NN." formátumban. A rendszer ebből kiszámolja a páciens életkorát,
+                    melyet felhasznál a gyógyszer felírásnál. A dátum begépelhető és ki is választható a naptárból, illetve elírás esetén később szerkeszthető.
+                </TextBox>
+
+                <Label Grid.Row="6" Content="Lakcím" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Center" Margin="15,0,0,0" Grid.ColumnSpan="2"></Label>
+                <TextBox Grid.Row="7" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="16,5,17,5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False" Grid.ColumnSpan="2">
                     A lakcím mezőben megadható a páciens bejelentett tartózkodási helye. Elírás esetén a lakcím szerkeszthető.
                 </TextBox>
-                
-                <Label Grid.Row="6" Content="TAJ" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
-                <TextBox Grid.Row="7" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
-                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+
+                <Label Grid.Row="8" Content="TAJ" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Center" Margin="15,0,0,0" Grid.ColumnSpan="2"></Label>
+                <TextBox Grid.Row="9" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="16,5,17,5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False" Grid.ColumnSpan="2">
                     A rendszer csakis valósnak tekinthető TAJ számot fogad el. A mező alatt feltüntetésre került egy példa, amely 
                     formának meg kell felelni. Ennek függvényében tehát a "000 000 000" elfogadható, míg a "000000000" nem. Elírás esetén a TAJ szám szerkeszthető.
                 </TextBox>
-                
-                <Label Grid.Row="8" Content="Panasz" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="15 0 0 0"></Label>
-                <TextBox Grid.Row="9" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="15 5" Width="950"
-                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False">
+
+                <Label Grid.Row="10" Content="Panasz" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Center" Margin="15,0,0,0" Grid.ColumnSpan="2"></Label>
+                <TextBox Grid.Row="11" Style="{StaticResource MaterialDesignOutlinedTextBox}" FontSize="20" Margin="16,5,17,5" Width="950"
+                         TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="100" Padding="5" IsHitTestVisible="False" Grid.ColumnSpan="2">
                     A panasz mezőben kerül rögzítésre a páciens által közölt probléma. Ez alapján történik a megfelelő kezelés kiválasztása, 
                     valamint a diagnózis felállítása. A panasz a későbbiek folyamán nem szerkeszthető.
                 </TextBox>

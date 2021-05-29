@@ -39,10 +39,6 @@ namespace Physician.Medication
                 });
                 ClearFields();
             }
-            else
-            {
-                MessageBox.Show("Hibás adatok!");
-            }
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)

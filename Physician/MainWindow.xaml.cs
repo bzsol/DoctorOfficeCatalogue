@@ -26,17 +26,17 @@ namespace Physician
     /// </summary>
     public partial class MainWindow : Window
     {
-        public void UpdateData()
-        {
-            PatientList.ItemsSource = PatientDataProvider.GetPatients().ToList();
-        }
 
         public MainWindow()
         {
             InitializeComponent();
             UpdateData();
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
-            
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");   
+        }
+
+        public void UpdateData()
+        {
+            PatientList.ItemsSource = PatientDataProvider.GetPatients().ToList();
         }
 
         private void HelpButton_Click(object sender, RoutedEventArgs e)
@@ -123,6 +123,16 @@ namespace Physician
                 PreferenceButton.BorderBrush = (Brush)bc.ConvertFromString("#F44336");
             }
             SearchTextBox.Text = string.Empty;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Notification notification = new Notification
+            {
+                Owner = (Window)PresentationSource.FromVisual(this).RootVisual
+            };
+            notification.ShowDialog();
+            e.Cancel = true;
         }
     }
 }

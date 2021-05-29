@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using Physician.DataProvider;
 
 namespace Physician.Medication
@@ -25,6 +26,7 @@ namespace Physician.Medication
             InitializeComponent();
             UpdateData();
         }
+
         public void UpdateData()
         {
             MedicationList.ItemsSource = MedicationDataProvider.GetMedications().ToList();
@@ -58,7 +60,8 @@ namespace Physician.Medication
         {
             if (!string.IsNullOrEmpty(SearchTextBox.Text))
             {
-                var filteredList = MedicationDataProvider.GetMedications().Where(x => x.MedicationName.Contains(SearchTextBox.Text)).ToList();
+                var filteredList = PreferenceButton.Content.Equals("Név") ? MedicationDataProvider.GetMedications().Where(x => x.MedicationName.Contains(SearchTextBox.Text)).ToList() :
+                    MedicationDataProvider.GetMedications().Where(x => x.Description.Contains(SearchTextBox.Text)).ToList();
                 MedicationList.ItemsSource = filteredList;
                 CountOfResultsLabel.Content = $"{filteredList.Count} találat";
                 CountOfResultsLabel.Visibility = Visibility.Visible;
@@ -68,6 +71,24 @@ namespace Physician.Medication
                 UpdateData();
                 CountOfResultsLabel.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void SearchPreference_Click(object sender, RoutedEventArgs e)
+        {
+            BrushConverter bc = new BrushConverter();
+            if (PreferenceButton.Content.Equals("Név"))
+            {
+                PreferenceButton.Content = "Leírás";
+                PreferenceButton.Background = (Brush)bc.ConvertFromString("#45B3E7");
+                PreferenceButton.BorderBrush = (Brush)bc.ConvertFromString("#45B3E7");
+            }
+            else
+            {
+                PreferenceButton.Content = "Név";
+                PreferenceButton.Background = (Brush)bc.ConvertFromString("#F44336");
+                PreferenceButton.BorderBrush = (Brush)bc.ConvertFromString("#F44336");
+            }
+            SearchTextBox.Text = string.Empty;
         }
     }
 

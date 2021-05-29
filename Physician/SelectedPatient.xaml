@@ -68,7 +68,7 @@
             <TextBox Grid.Row="4" Grid.Column="1" x:Name="HISTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                  Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="000 000 000" Padding="0,12,0,0"/>
             <TextBox Grid.Row="5" Grid.Column="1" x:Name="AllergyTextBox"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="Pollen Allergia" Padding="0,12,0,0"/>
+                 Width="Auto" FontSize="20" materialDesign:HintAssist.HelperText="amoxicillin" Padding="0,12,0,0"/>
             <TextBox x:Name="ComplaintTextBox" Grid.Row="6" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"
                 Height="110" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" FontSize="20" IsHitTestVisible="False"/>
             <TextBox x:Name="DiagnosisTextBox" Grid.Row="7" Grid.Column="1" Style="{StaticResource MaterialDesignOutlinedTextBox}" VerticalAlignment="Center" Width="Auto"

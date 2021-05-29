@@ -62,29 +62,59 @@ namespace Physician.Medication
                 medication.Packaging = PackagingBox.Text;
                 medication.Description = DescriptionBox.Text;
                 MedicationDataProvider.UpdateMedication(medication);
-                ErrorLabel.Visibility = Visibility.Collapsed;
+                ErrorLabel.Visibility = Visibility.Hidden;
                 Close();
             }
-
+            ErrorLabel.Content = "Az adatok kitöltése hibás!";
             ErrorLabel.Visibility = Visibility.Visible;
         }
 
         private void AddMedication_Click(object sender, RoutedEventArgs e)
         {
-            if (PatientObserver.Instance.Medications.Contains(medication.MedicationName))
+            if (MedReview())
             {
-                PatientObserver.Instance.Medications.Remove(medication.MedicationName);
+                if (PatientObserver.Instance.Medications.Contains(medication.MedicationName))
+                {
+                    PatientObserver.Instance.Medications.Remove(medication.MedicationName);
+                }
+                else
+                {
+                    PatientObserver.Instance.Medications.Add(medication.MedicationName);
+                }
+                ErrorLabel.Visibility = Visibility.Hidden;
+                Close();
             }
             else
             {
-                PatientObserver.Instance.Medications.Add(medication.MedicationName);
+                ErrorLabel.Visibility = Visibility.Visible;
+                ErrorLabel.Content = "A gyógyszer felírása ellenjavallt!";
             }
-            Close();
         }
 
         private void CloseMedicationDataWindow_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private bool MedReview()
+        {
+            if (PatientObserver.Instance.Age < medication.MinimumAge || PatientObserver.Instance.Age > medication.MaximumAge)
+            {
+                return false;
+            }
+
+            foreach (var allergy in PatientObserver.Instance.Allergy.Split(", "))
+            {
+                foreach (var ingredient in medication.ActiveIngredient.Split(", "))
+                {
+                    if (allergy.Equals(ingredient))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
 
         private bool GetValidationResult()
