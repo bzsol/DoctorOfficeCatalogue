@@ -1,5 +1,6 @@
 # Doctor's Office Catalogue for the NI course
 
+
 #### 1. Introduction:
 > Write a program that will manage patients in a doctor's office implemented in C# WPF application clients and one .NET Core API server.
 - The medical assistant panel will record the patients and their data who enter the office.
@@ -7,7 +8,7 @@
      - Validation and UNIT test
    - Home Address
    - Health Insurance Number
-     - Format have to be: `000 000 000` 
+     - Format have to be:  `000 000 000` 
      - Validation and UNIT test
    - Complaint
 
@@ -23,7 +24,13 @@
   - API, so provide JSON for further applications and it is lightweight
   - After the start or restart the data is load the previous status
 
-
+- Additions
+  - Added Date of birth to manage patient age and more precisely determine their problems.
+  - Search panel
+    - You can search by Name or SNN (Social Security Number / Health Insurance Card)
+    - Show how many valid search have been found. 
+  - Added allergy option to handle the patients allergies
+  - The physician can prescribe the medicine via medicine panel.
 
 ---
 #### 2. Team members:
@@ -39,6 +46,6 @@
    - <b>MStestFramework</b> 
 
 ---
-#### 4. Pictures:
-<center><img src="https://github.com/bzsol/DoctorOfficeCatalogue/blob/main/asspanel.png" alt="Assistant Panel Picture"></center>
+
+
 
